@@ -1,0 +1,4904 @@
+body {
+  font-family: 'roboto', bold;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.8em;
+  background: #fff;
+  position: relative;
+
+}
+
+.col-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 14.666667%;
+}
+
+/*----------navbar------------*/
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  width: 100%;
+  color: #000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+}
+
+.nav-links {
+  margin-left: 500px;
+  display: flex;
+  justify-content: space-around;
+  width: 46%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.logo {
+  width: 220px;
+  padding-top: 7px;
+}
+
+.menu {
+  margin-left: 907px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.navbarbox {
+  background: -webkit-box-shadow -1px 9px 20px -8px rgba(231, 175, 36, 0.78);
+  /* -moz- */
+  box-shadow: -1px 9px 20px -8px rgba(231, 175, 36, 0.78);
+  box-shadow: -1px 9px 20px -8px rgba(231, 175, 36, 0.78);
+  ;
+  padding-bottom: 5px;
+  border: 0px;
+  width: 100%;
+}
+
+.nav-item {
+  color: #E7AF24;
+}
+
+.navbartext {
+  color: #E7AF24;
+  padding-right: 80px;
+}
+
+.logobox {
+  padding-top: 0px;
+  margin-bottom: 20px;
+  width: 140px;
+}
+
+.btn-admin {
+  border: 0px;
+  color: #E7AF24;
+  padding: 10px 30px;
+}
+
+/*----------navbar------------*/
+.boxregis {
+  background: #E7AF24;
+  border-radius: 10px;
+  padding: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.boxlogin {
+  background: #E7AF24;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.textsubredex {
+  color: #EE2926;
+  text-align: left;
+  margin: 20px 29px;
+  font-size: 14px;
+}
+
+.textsubgreenex {
+  color: #05914D;
+  text-align: left;
+  margin: 20px 29px;
+  font-size: 14px;
+}
+
+.form-control.ex {
+  border: 2px solid #E7AF24;
+  border-radius: 10px;
+  width: 190px;
+}
+
+.space {
+  padding: 0px 150px
+}
+
+.droptext {
+  color: #E7AF24;
+  padding-top: 30px;
+}
+
+.textsubex0 {
+  color: #404041;
+  font-size: 12px;
+  margin: 6px 29px;
+  padding-top: 6px;
+}
+
+.marketbox {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background: #F8F9FA;
+  border-bottom: 2px solid #E7AF24;
+}
+
+.headtext {
+  width: 500px;
+  color: #E7AF24;
+
+  padding-top: 5px;
+  padding-left: 150px;
+  border-bottom: 2px solid #E7AF24;
+}
+
+.table {
+  padding-top: 30px;
+}
+
+.iconstar {
+  width: 25px;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.btn-fav {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.btn-market {
+  padding-top: 10px;
+  color: #fff;
+  background: #E7AF24;
+  border-radius: 15px;
+
+}
+
+.form-control-search {
+  border: 2px solid #E7AF24;
+  border-radius: 12px;
+  height: 30px;
+}
+
+.text {
+  color: #E7AF24;
+  padding-top: 0px;
+  padding-right: 10px;
+  text-align: left
+}
+
+.textshow {
+  color: #E7AF24;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+.btn-show {
+  border-bottom: 2px solid #E7AF24;
+  color: #E7AF24;
+  margin-right: 150px;
+}
+
+.inforbox {
+  padding-left: 238px;
+  padding-right: 0px;
+}
+
+.inforw {
+  color: #404041;
+  text-align: center;
+}
+
+.infor {
+  color: #404041;
+  text-align: left;
+}
+
+.textblack {
+  color: #404041;
+  margin-bottom: 17px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.textred {
+  color: #EE2926;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.textsubred {
+  color: #EE2926;
+  font-size: 12px;
+  margin: 15px 35px;
+}
+
+.textgreen {
+  color: #05914D;
+  margin-bottom: 17px;
+  text-align: left;
+}
+
+.text0 {
+  color: #404041;
+  font-size: 12px;
+  margin: 6px 43px;
+  padding-top: 6px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+}
+
+.textformorder {
+  color: #404041;
+  font-size: 11px;
+  text-align: left;
+  padding: 10px;
+}
+
+.textsubgreen {
+  color: #05914D;
+  font-size: 12px;
+  margin: 15px 35px;
+
+}
+
+.subicon {
+  width: 10px;
+  margin-right: 5px;
+
+}
+
+.curren_icon {
+  padding-right: 10px;
+  padding-left: px;
+  width: 27px;
+  margin-left: 10px;
+}
+
+.coin_icon {
+  margin-top: 20px;
+  padding-right: 10px;
+  width: 40px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.textfund {
+  font-size: 15px;
+  color: #404041;
+  margin-top: 10px;
+}
+
+.texts {
+  margin-left: 0px;
+  font-size: 12px;
+  color: #404041
+}
+
+.textcard {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-right: 40px;
+  margin-left: 40px;
+  color: #404041;
+  text-align: right;
+}
+
+.textcardr {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-right: 40px;
+  margin-left: 55px;
+  color: #EE2926;
+}
+
+.textcardg {
+  font-size: 12px;
+  margin-top: 0px;
+  margin-right: 40px;
+  margin-left: 55px;
+  color: #05914D;
+}
+
+.boxgraph {
+  width: max;
+  height: 250px;
+  border: 1px solid #404041;
+}
+
+.btn-order {
+  color: #404041;
+  margin-right: 0px;
+  font-size: 10px;
+  border-radius: 0px;
+  padding: 5px 8px;
+}
+
+.textsubfund {
+  font-size: 15px;
+  color: #404041;
+  margin-top: 35px;
+  text-align: center;
+  margin-bottom: 63px;
+}
+
+.card {
+  border: 0px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.drop_curren_icon {
+  padding-right: 10px;
+  padding-left: px;
+  width: 35px;
+  margin-left: 10px;
+}
+
+.btn-dropdown {
+  background: #fff;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.form-control {
+  border: 2px solid #E7AF24;
+  border-radius: 10px;
+}
+
+.form-controlcurren {
+  border: 2px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 300px;
+}
+
+.texth {
+  color: #E7AF24;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 15px;
+}
+
+.textex {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  margin: 0px 0px;
+  padding-top: 6px;
+  padding-left: 12px;
+  padding-right: 10px;
+}
+
+.textsubex {
+  color: #404041;
+  font-size: 10px;
+  margin: 6px 10px;
+  padding-top: 6px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
+}
+
+.textsubh {
+  color: #404041;
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 15px;
+}
+
+.textsubred {
+  color: #EE2926;
+  margin-bottom: 12px;
+  text-align: center;
+  margin: 10px 15px;
+}
+
+.textf {
+  color: #fff;
+  margin-left: 520px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.logof {
+  width: 70px;
+  margin-left: 700px;
+}
+
+.step {
+  color: #E7AF24;
+  text-align: left;
+  padding-top: 150px;
+  padding-left: 400px;
+}
+
+.textstep {
+  color: #E7AF24;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.icon {
+  width: 40px;
+}
+
+.iconadmin {
+  width: 30px;
+}
+
+.bg-exchange {
+  width: 100%;
+  background-image: url(../images/bg-grapg-01.png);
+  background-size: cover;
+
+}
+
+.textwhite {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.iconarrow {
+  padding-left: 80px;
+  padding-top: 100px;
+}
+
+.btn-submit {
+  border: 2px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.bg-grey {
+  background-color: #F8F9FA;
+}
+
+.textyellow {
+  color: #E7AF24;
+  text-align: center;
+}
+
+.btn-trade {
+  border: 2px solid #E7AF24;
+  border-radius: 15px;
+  color: #E7AF24;
+  padding-top: 15px;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.bg-yellow {
+  background-color: #E7AF24;
+  padding: 0px 20px;
+}
+
+.textwhite {
+  color: #fff;
+  padding-left: 50px;
+}
+
+.textwhitef {
+  color: #fff;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.textsmall {
+  color: #fff;
+  padding-left: 150px;
+}
+
+.headt {
+  width: 500px;
+  color: #E7AF24;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 150px;
+}
+
+.btn-verifi {
+  background: #fff;
+  color: #E7AF24;
+  border-radius: 30px;
+  margin-left: 20px;
+}
+
+.head {
+  width: 260px;
+  color: #E7AF24;
+  text-align: center;
+  padding-top: 61px;
+  padding-left: 696px;
+}
+
+/* Style the buttons */
+.btn-group {
+  padding: 0px 40px;
+  background-color: #E7AF24;
+  cursor: pointer;
+  color: #fff;
+  font-size: 25px;
+  margin: 0px 50px;
+  text-align: center;
+}
+
+/* Style the buttons */
+.btn-current {
+  background: #fff;
+  color: #E7AF24;
+  padding: 5px 30px;
+}
+
+/* Style the active class (and buttons on mouse-over) */
+.active,
+.btn-current:hover {
+  color: #E7AF24;
+  border-bottom: 2px solid #E7AF24;
+  border-radius: 0px;
+}
+
+.btn-choose {
+  border-radius: 0px;
+  outline: none;
+  padding: 0px 40px;
+  background-color: #fff;
+  cursor: pointer;
+  color: #E7AF24;
+  font-size: 25px;
+  margin: 0px 50px;
+  text-align: center;
+}
+
+.btn-copy {
+  border: 2px solid #E7AF24;
+  padding-bottom: 0px;
+  color: #E7AF24;
+}
+
+.btn-box {
+  border: 3px solid #E7AF24;
+  padding: 20px 80px;
+  margin-top: 100px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.btn-buy {
+  background: #05914D;
+  color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.btn-sell {
+  background: #EE2424;
+  color: #fff;
+  padding: 5px;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.textorder {
+  color: #404041;
+  font-size: 10px;
+  margin: 6px 9px;
+  padding-top: 6px;
+  padding-left: 25px;
+  padding-right: 11px;
+}
+
+.boxorder {
+  width: max;
+  height: 180px;
+  border: 2px solid #E7AF24;
+}
+
+.thb {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.btn-box {
+  border: 3px solid #E7AF24;
+  margin-top: 53px;
+  border-radius: 16px;
+  margin-left: 37px;
+  margin-right: 50px;
+  padding: 28px 70px;
+}
+
+.textform {
+  color: #E7AF24;
+  font-size: 13px;
+  text-align: right;
+  padding-right: 11px;
+  padding-top: 8px;
+}
+
+.formcoin {
+  padding: 0px 0px;
+}
+
+.input-group text {
+
+  border: 2px solid #E7AF24;
+  border-radius: 10px;
+  width: 265px;
+}
+
+.subtext {
+  width: 250px;
+  color: #E7AF24;
+  border-bottom: 2px solid #E7AF24;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.formcoin {
+  padding: 10px 300px;
+}
+
+.textform {
+  color: #E7AF24;
+  font-size: 17px;
+  text-align: right;
+  padding-right: 50px;
+  padding-top: 8px;
+}
+
+.textformorder {
+  color: #404041;
+  font-size: 12px;
+  text-align: left;
+  padding: 7px;
+}
+
+.textformblack {
+  color: #404041;
+  font-size: 17px;
+  text-align: left;
+  padding-right: 50px;
+  padding-top: 8px;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E7AF24;
+  margin-top: 50px;
+}
+
+.btn-login {
+  border: 0px;
+  background: #fff;
+  color: #E7AF24;
+  padding: 10px 30px;
+}
+
+.qr {
+  width: 15%;
+  margin-right: 10px;
+}
+
+.btn btn-qr {
+  color: #404041;
+  border: 0px;
+}
+
+.dash {
+  border-left: 2px dashed #E7AF24;
+  width:
+}
+
+.page-link {
+  border: 0px;
+  color: #404041;
+}
+
+.pagination {
+  padding: 0px 850px;
+}
+
+.btn-deposit {
+  color: #05914D;
+  border-bottom: 2px solid #05914D;
+  border-radius: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.btn-withdraw {
+  color: #EE2424;
+  border-bottom: 2px solid #EE2424;
+  border-radius: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.btn-tradef {
+  color: #404041;
+  border-bottom: 2px solid #404041;
+  border-radius: 0px;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.boxshow:not(:first-child) {
+  display: none;
+}
+
+.iconsearch {
+  width: 20px;
+}
+
+.input-group-prepend {
+  margin-right: -1px;
+  width: 411px;
+}
+
+/*-----------------------------------------
+    RESPONSIVE
+-------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:374px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 25px;
+  }
+
+  .h2,
+  h2 {
+    width: 150px;
+    font-size: 22px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 25px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 17px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 13px
+  }
+
+  .h6,
+  h6 {
+    font-size: 10px;
+  }
+
+  /*--font size--*/
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px 7px;
+    width: 60%;
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .textcardg {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 25px;
+    color: #05914D;
+  }
+
+  .btn-copy {
+    border: 2px solid #E7AF24;
+    padding-bottom: 0px;
+    color: #E7AF24;
+    padding: 4px 1px;
+    font-size: 12px;
+  }
+
+  .headt {
+    width: 300px;
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 35px;
+  }
+
+  .menu {
+    margin-left: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .textform {
+    color: #E7AF24;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 8px;
+  }
+
+  .formcoin {
+    padding: 10px 15px;
+  }
+
+  .inforbox {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn-trade {
+    border: 2px solid #E7AF24;
+    border-radius: 15px;
+    color: #E7AF24;
+    padding-top: 18px;
+    text-align: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 28px;
+    margin-bottom: -12px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .btn-qr {
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  .qr {
+    width: 46%;
+    margin-right: 10px;
+  }
+
+  .textyellow {
+    color: #E7AF24;
+    text-align: center;
+    margin-left: 82px;
+  }
+
+  .btn-box {
+    border: 2px solid #E7AF24;
+    margin-top: 42px;
+    border-radius: 16px;
+    margin-left: 18px;
+    margin-right: -18px;
+    padding: 8px 39px;
+  }
+
+  .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 14.666667%;
+
+  }
+
+  .icon {
+    width: 30px;
+    margin-right: 5px;
+    margin-top: 19px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .iconarrow {
+    padding-left: 54px;
+    padding-top: 0px;
+    /* text-align: center; */
+    transform: rotate(90deg);
+    margin-left: 101px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 27px;
+    margin-left: -7px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 170px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 110px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 27px;
+  }
+
+  .dash {
+    display: none;
+  }
+
+  .iconadmin {
+    width: 20px;
+    margin-top: 29px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 11px;
+    margin-left: 24px;
+    margin-top: 25px;
+  }
+
+  .headtext {
+    width: 168px;
+    color: #E7AF24;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 44%;
+  }
+
+  .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 22%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .form-control-search {
+    display: none;
+  }
+
+  .iconsearch {
+    display: none;
+  }
+
+  .textfund {
+    font-size: 8px;
+    color: #404041;
+    margin-top: 40px;
+    margin-bottom: 95px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 10px;
+    margin: 1px 0px;
+  }
+
+  .coin_icon {
+    display: none;
+  }
+
+  .textsubfund {
+    font-size: 10px;
+    color: #404041;
+    margin-top: 42px;
+    text-align: center;
+    margin-bottom: 108px;
+  }
+
+  .btn-group {
+    padding: 0px 25px;
+    background-color: #E7AF24;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 5px;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .btn-choose {
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 15px;
+    margin: 0px 5px;
+    text-align: left;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 8px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 15px;
+    font-size: 8px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 11px;
+    font-size: 8px;
+  }
+
+  .thb {
+    width: 31px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .bg-yellow {
+    background-color: #E7AF24;
+    padding: 7px 1px;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 9px;
+  }
+
+  .boxgraph {
+    width: max;
+    height: 150px;
+    border: 1px solid #404041;
+  }
+
+  .textcard {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 22px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardr {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-right: -2px;
+    margin-left: 20px;
+    color: #EE2926;
+  }
+
+  .lo {
+    display: none;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  .logo {
+    width: 140px;
+    padding-top: 7px;
+    padding-left: 8px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 0px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  .space {
+    padding: 0px 10px;
+  }
+
+  .curren_icon {
+    display: none;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 10px;
+  }
+
+  .small,
+  small {
+    font-size: 47%;
+    font-weight: 400;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 7px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .boxregis {
+    background: #E7AF24;
+    border-radius: 10px;
+    padding: 35px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .textshow {
+    display: none;
+  }
+
+  .btn-show {
+    display: none;
+  }
+
+  .form-check {
+    position: relative;
+    display: block;
+    padding-left: 5.25rem;
+  }
+
+  .logof {
+    width: 50px;
+    margin-left: 8px;
+  }
+
+  .pagination {
+    padding: 0px 79x;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 10px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-top: 3px;
+    padding-left: 24px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 8px;
+    margin: 6px 0px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:413px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 25px;
+  }
+
+  .h2,
+  h2 {
+    width: 150px;
+    font-size: 22px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 25px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 17px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 13px
+  }
+
+  .h6,
+  h6 {
+    font-size: 10px;
+  }
+
+  /*--font size--*/
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px 7px;
+    width: 60%;
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .bg-yellow {
+    background-color: #E7AF24;
+    padding: 7px 1px;
+  }
+
+  .textcardg {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 25px;
+    color: #05914D;
+  }
+
+  .headt {
+    width: 300px;
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 35px;
+  }
+
+  .menu {
+    margin-left: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .textform {
+    color: #E7AF24;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 8px;
+  }
+
+  .formcoin {
+    padding: 10px 15px;
+  }
+
+  .inforbox {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .btn-trade {
+    border: 2px solid #E7AF24;
+    border-radius: 15px;
+    color: #E7AF24;
+    padding-top: 18px;
+    text-align: center;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: 28px;
+    margin-bottom: -12px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .btn-qr {
+    padding-left: 0px;
+    text-align: left;
+  }
+
+  .btn-current {
+    background: #fff;
+    color: #E7AF24;
+    padding: 5px 20px;
+  }
+
+  .qr {
+    width: 46%;
+    margin-right: 10px;
+  }
+
+  .textyellow {
+    color: #E7AF24;
+    text-align: center;
+    margin-left: 82px;
+  }
+
+  .btn-box {
+    border: 2px solid #E7AF24;
+    margin-top: 42px;
+    border-radius: 16px;
+    margin-left: 18px;
+    margin-right: -18px;
+    padding: 8px 39px;
+  }
+
+  .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 14.9%;
+  }
+
+  .icon {
+    width: 30px;
+    margin-right: 5px;
+    margin-top: 19px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 20px;
+  }
+
+  .iconarrow {
+    padding-left: 54px;
+    padding-top: 0px;
+    /* text-align: center; */
+    transform: rotate(90deg);
+    margin-left: 101px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 27px;
+    margin-left: -7px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 170px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 110px;
+  }
+
+  .btn-copy {
+    border: 2px solid #E7AF24;
+    padding-bottom: 0px;
+    color: #E7AF24;
+    padding: 4px 1px;
+    font-size: 12px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 27px;
+  }
+
+  .dash {
+    display: none;
+  }
+
+  .iconadmin {
+    width: 20px;
+    margin-top: 29px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 11px;
+    margin-left: 24px;
+    margin-top: 25px;
+  }
+
+  .headtext {
+    width: 168px;
+    color: #E7AF24;
+    padding-top: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 43%;
+    margin-left: 5px;
+  }
+
+  .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 22%;
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .form-control-search {
+    display: none;
+  }
+
+  .iconsearch {
+    display: none;
+  }
+
+  .textfund {
+    font-size: 8px;
+    color: #404041;
+    margin-top: 40px;
+    margin-bottom: 95px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 10px;
+    margin: 1px 0px;
+  }
+
+  .coin_icon {
+    display: none;
+  }
+
+  .textsubfund {
+    font-size: 10px;
+    color: #404041;
+    margin-top: 42px;
+    text-align: center;
+    margin-bottom: 108px;
+  }
+
+  .btn-group {
+    padding: 0px 25px;
+    background-color: #E7AF24;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 5px;
+    text-align: left;
+    flex-direction: column;
+  }
+
+  .btn-choose {
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 64px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 15px;
+    margin: 0px 5px;
+    text-align: left;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 13px;
+    margin-right: 15px;
+    font-size: 8px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 15px;
+    font-size: 8px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 11px;
+    font-size: 8px;
+  }
+
+  .thb {
+    width: 31px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 80px;
+    font-size: 9px;
+  }
+
+  .boxgraph {
+    width: max;
+    height: 150px;
+    border: 1px solid #404041;
+  }
+
+  .textcard {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 22px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardr {
+    font-size: 12px;
+    margin-top: 0px;
+    margin-right: -2px;
+    margin-left: 20px;
+    color: #EE2926;
+  }
+
+  .lo {
+    display: none;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 0px;
+    padding-left: 0px;
+  }
+
+  .logo {
+    width: 140px;
+    padding-top: 7px;
+    padding-left: 8px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 0px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  .space {
+    padding: 0px 10px;
+  }
+
+  .curren_icon {
+    display: none;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 8px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 10px;
+  }
+
+  .small,
+  small {
+    font-size: 47%;
+    font-weight: 400;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    padding-right: 7px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .boxregis {
+    background: #E7AF24;
+    border-radius: 10px;
+    padding: 35px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .textshow {
+    display: none;
+  }
+
+  .btn-show {
+    display: none;
+  }
+
+  .form-check {
+    position: relative;
+    display: block;
+    padding-left: 5.25rem;
+  }
+
+  .logof {
+    width: 53px;
+    margin-left: 11px;
+  }
+
+  .pagination {
+    padding: 0px 79x;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 10px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-top: 3px;
+    padding-left: 36px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 8px;
+    margin: 6px 0px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 5px 2px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width:414px) and (max-width:424px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 30px;
+  }
+
+  .h2,
+  h2 {
+    width: 150px;
+    font-size: 25px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 20px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 15px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 10px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 8px;
+  }
+
+  /*--font size--*/
+
+  .lo {
+    display: none;
+  }
+
+  .textcardr {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 13px;
+    color: #EE2926;
+  }
+
+  .textcardg {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 33px;
+    margin-left: 17px;
+    color: #05914D;
+  }
+
+  .textcard {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 32px;
+    margin-left: 12px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .boxgraph {
+    width: max;
+    height: 150px;
+    border: 1px solid #404041;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .bg-yellow {
+    background-color: #E7AF24;
+    padding: 0px 4px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-left: 9px;
+    padding-top: 23px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 170px;
+    font-size: 10px;
+  }
+
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .thb {
+    width: 49px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 9px;
+    margin: 14px 0px;
+  }
+
+  .space {
+    padding: 0px 18px
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 13px;
+    padding-left: 0px;
+  }
+
+  .logo {
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .formcoin {
+    padding: 0px 0px;
+  }
+
+  .textform {
+    color: #E7AF24;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 8px;
+    margin-left: 31px;
+  }
+
+  .textformblack {
+    color: #404041;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 0px;
+    padding-top: 8px;
+    margin-left: 106px;
+  }
+
+  .pagination {
+    padding: 0px 146px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 7px;
+    margin: 0px 0px;
+  }
+
+  .btn-show {
+    border-bottom: 1px solid #E7AF24;
+    color: #E7AF24;
+    margin-right: 4px;
+    font-size: 10px;
+    border-radius: 0px;
+    width: 35px;
+    padding-top: 0px;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 11px;
+  }
+
+  .infor {
+    color: #404041;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .btn-verifi {
+    background: #fff;
+    color: #E7AF24;
+    border-radius: 30px;
+    margin-left: 5px;
+  }
+
+  .boxregis {
+    background: #E7AF24;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .form-control {
+    border: 1px solid #E7AF24;
+    border-radius: 10px;
+    width: 180px;
+  }
+
+  .logof {
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .small,
+  small {
+    font-size: 46%;
+    font-weight: 400;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 13px;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 41px;
+    font-size: 22px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 33px;
+    padding-top: 15px;
+    padding-right: 0px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 5px;
+    padding-left: px;
+    width: 22px;
+    margin-left: 0px;
+  }
+
+  .iconarrow {
+    padding-left: 14px;
+    padding-top: 78px;
+    width: 30px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 90px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50px;
+    font-size: 5px;
+  }
+
+  .headtext {
+    width: 123px;
+    color: #E7AF24;
+    padding-top: 5px;
+    padding-left: 2px;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .form-control-search {
+    border: 1px solid #E7AF24;
+    border-radius: 12px;
+    height: 19px;
+    width: 125px;
+    margin-right: -12px;
+  }
+
+  .iconsearch {
+    width: 13px;
+    margin: 4px 5px;
+    padding-bottom: 5px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 7px;
+    text-align: center;
+    margin: 5px -5px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .textred {
+    color: #EE2926;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .textgreen {
+    color: #05914D;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .curren_icon {
+    padding-right: 8px;
+    padding-left: px;
+    width: 20px;
+    margin-left: -5px;
+  }
+
+  .btn-group {
+    padding: 0px 15px;
+    background-color: #E7AF24;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 0px;
+    text-align: center;
+    width: max-content;
+  }
+
+  .btn-choose {
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 15px;
+    margin: 0px 0px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 44px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 10px;
+  }
+
+  .textfund {
+    font-size: 11px;
+    color: #404041;
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  .textsubfund {
+    font-size: 13px;
+    color: #404041;
+    margin-top: 85px;
+    text-align: center;
+    margin-bottom: 125px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 1px solid #05914D;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 1px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 1px solid #404041;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .headt {
+    width: 380px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 0px;
+  }
+
+  .inforbox {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 0px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 9px;
+  }
+
+  .table {
+    padding-top: 47px;
+    padding-left: 43px;
+  }
+
+  .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width:425px) and (max-width:767px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 30px;
+  }
+
+  .h2,
+  h2 {
+    width: 150px;
+    font-size: 25px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 20px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 15px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 10px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 8px;
+  }
+
+  /*--font size--*/
+
+  .lo {
+    display: none;
+  }
+
+  .textcardr {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 13px;
+    color: #EE2926;
+  }
+
+  .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 13%;
+  }
+
+  .textcardg {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 33px;
+    margin-left: 17px;
+    color: #05914D;
+  }
+
+  .btn-copy {
+    border: 2px solid #E7AF24;
+    padding-bottom: 0px;
+    color: #E7AF24;
+    padding: 7px 1px;
+    font-size: 13px;
+  }
+
+  .textcard {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 32px;
+    margin-left: 12px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .boxgraph {
+    width: max;
+    height: 150px;
+    border: 1px solid #404041;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 12px;
+  }
+
+  .bg-yellow {
+    background-color: #E7AF24;
+    padding: 0px 4px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-left: 9px;
+    padding-top: 23px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 170px;
+    font-size: 10px;
+  }
+
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px 7px;
+    width: 60%;
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .btn-box {
+    border: 2px solid #E7AF24;
+    margin-top: 53px;
+    border-radius: 16px;
+    margin-left: -9px;
+    margin-right: 50px;
+    padding: 28px 70px;
+  }
+
+  .menu {
+    margin-left: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .thb {
+    width: 49px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 9px;
+    margin: 14px 0px;
+  }
+
+  .space {
+    padding: 0px 18px
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 13px;
+    padding-left: 0px;
+  }
+
+  .logo {
+    width: 100px;
+    padding-left: 10px;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .formcoin {
+    padding: 0px 0px;
+  }
+
+  .textform {
+    color: #E7AF24;
+    font-size: 16px;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 8px;
+    margin-left: 31px;
+  }
+
+  .textformblack {
+    color: #404041;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 0px;
+    padding-top: 8px;
+    margin-left: 106px;
+  }
+
+  .pagination {
+    padding: 0px 146px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 7px;
+    margin: 0px 0px;
+  }
+
+  .btn-show {
+    border-bottom: 1px solid #E7AF24;
+    color: #E7AF24;
+    margin-right: 4px;
+    font-size: 10px;
+    border-radius: 0px;
+    width: 35px;
+    padding-top: 0px;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 11px;
+  }
+
+  .infor {
+    color: #404041;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .btn-verifi {
+    background: #fff;
+    color: #E7AF24;
+    border-radius: 30px;
+    margin-left: 2px;
+    padding: 2px 5px;
+  }
+
+  .boxregis {
+    background: #E7AF24;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .form-control {
+    border: 1px solid #E7AF24;
+    border-radius: 10px;
+    width: 180px;
+  }
+
+  .logof {
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .small,
+  small {
+    font-size: 46%;
+    font-weight: 400;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 13px;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 41px;
+    font-size: 22px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 14px;
+    margin-left: 33px;
+    padding-top: 15px;
+    padding-right: 0px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 5px;
+    padding-left: px;
+    width: 22px;
+    margin-left: 0px;
+  }
+
+  .iconarrow {
+    padding-left: 14px;
+    padding-top: 78px;
+    width: 30px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 90px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 50px;
+    font-size: 5px;
+  }
+
+  .headtext {
+    width: 123px;
+    color: #E7AF24;
+    padding-top: 5px;
+    padding-left: 2px;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .form-control-search {
+    border: 1px solid #E7AF24;
+    border-radius: 12px;
+    height: 19px;
+    width: 125px;
+    margin-right: -12px;
+  }
+
+  .iconsearch {
+    width: 13px;
+    margin: 4px 5px;
+    padding-bottom: 5px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 7px;
+    text-align: center;
+    margin: 5px -5px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .textred {
+    color: #EE2926;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .textgreen {
+    color: #05914D;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .curren_icon {
+    padding-right: 8px;
+    padding-left: px;
+    width: 20px;
+    margin-left: -5px;
+  }
+
+  .btn-group {
+    padding: 0px 15px;
+    background-color: #E7AF24;
+    color: #fff;
+    font-size: 15px;
+    margin: 0px 0px;
+    text-align: center;
+    width: max-content;
+  }
+
+  .btn-choose {
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 15px;
+    margin: 0px 0px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 44px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 10px;
+  }
+
+  .textfund {
+    font-size: 11px;
+    color: #404041;
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  .textsubfund {
+    font-size: 13px;
+    color: #404041;
+    margin-top: 85px;
+    text-align: center;
+    margin-bottom: 125px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 1px solid #05914D;
+    border-radius: 0px;
+    margin-top: 39px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 1px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 1px solid #404041;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+
+  .headt {
+    width: 380px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 0px;
+  }
+
+  .inforbox {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 0px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 9px;
+  }
+
+  .table {
+    padding-top: 47px;
+    padding-left: 43px;
+  }
+
+  .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 35px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 30px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 25px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 20px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 16px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 15px;
+  }
+
+  /*--font size--*/
+  .navbar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 6px 7px;
+    width: 60%;
+    color: #fff;
+    background-color: #fff;
+  }
+
+  .menu {
+    margin-left: 31px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-top: 15px;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 309px;
+  }
+
+  .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 14.666667%;
+  }
+
+  .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .form-control {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 198px;
+  }
+
+  .pagination {
+    padding: 0px 317px;
+  }
+
+  .dropdown {
+    padding-left: 0px
+  }
+
+  .headtext {
+    width: 326px;
+    color: #E7AF24;
+    padding-top: 5px;
+    padding-left: 128px;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .form-control-search {
+    border: 2px solid #E7AF24;
+    border-radius: 12px;
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 83px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 310px;
+    font-size: 10px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 23px;
+  }
+
+  .textf {
+    color: #fff;
+    text-align: left;
+    padding-top: 0px;
+    margin-left: 0px;
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 7px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 1px;
+    padding-right: 10px;
+  }
+
+  .dash {
+    border-left: 2px dashed #E7AF24;
+    padding-right: 0px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 150px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 13px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 33px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 0px;
+  }
+
+  .iconarrow {
+    padding-left: 44px;
+    padding-top: 89px;
+    width: 60px;
+  }
+
+  .space {
+    padding: 0px 30px
+  }
+
+  .logo {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .btn-group {
+    padding: 0px 0px;
+    background-color: #E7AF24;
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 40px;
+    text-align: center;
+  }
+
+  .btn-choose {
+    border: none;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 20px;
+    margin: 0px 50px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 44px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 10px;
+  }
+
+  .textfund {
+    font-size: 11px;
+    color: #404041;
+    margin-top: 30px;
+    margin-left: 5px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  .textsubfund {
+    font-size: 13px;
+    color: #404041;
+    margin-top: 85px;
+    text-align: center;
+    margin-bottom: 125px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 1px solid #05914D;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 1px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 1px solid #404041;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    margin-top: -4px;
+    margin-right: 0px;
+    font-size: 16px;
+  }
+
+  .headt {
+    width: 500px;
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 80px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+
+  .iconadmin {
+    width: 25px;
+  }
+
+  .icon {
+    width: 35px;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 12px;
+  }
+
+  .btn-box {
+    border: 3px solid #E7AF24;
+    padding: 20px 80px;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-left: 24px;
+    margin-right: 50px;
+  }
+
+  .formcoin {
+    padding: 10px 50px;
+  }
+
+  .inforbox {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .table {
+    padding-top: 57px;
+    /* align-items: inherit; */
+    margin-left: 0px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 11px;
+  }
+
+  .textred {
+    color: #EE2926;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 11px;
+  }
+
+  .textgreen {
+    color: #05914D;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 11px;
+  }
+
+  .curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 21px;
+    margin-left: 0px;
+  }
+
+  .table {
+    padding-top: 57px;
+    /* align-items: inherit; */
+    margin-left: 0px;
+  }
+
+  .space {
+    padding: 0px 10px;
+  }
+
+  .btn-current {
+    margin-left: 20px;
+    background: #fff;
+    color: #E7AF24;
+    padding: 4px 1px;
+  }
+
+  .textsubex {
+    color: #404041;
+    font-size: 6px;
+    margin: 4px -9px;
+    padding-top: 6px;
+    padding-left: 15px;
+    /* padding-right: 10px; */
+  }
+
+  .curren_icon {
+    padding-right: 10px;
+    padding-left: -4px;
+    width: 26px;
+    margin-left: 2px;
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    text-align: left;
+    margin: 7px 15px;
+    font-size: 8px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    text-align: left;
+    margin: 7px 15px;
+    font-size: 8px;
+  }
+
+  .textsubex0 {
+    color: #404041;
+    font-size: 8px;
+    margin: 6px 21px;
+    padding-top: 1px;
+  }
+
+  .card {
+    border: 0px;
+    margin-top: 5px;
+    margin-left: 26px;
+  }
+
+  .textcard {
+    font-size: 8px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 3px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardr {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 42px;
+    margin-left: 6px;
+    color: #EE2926;
+  }
+
+  .form-control.ex {
+    border: 1px solid #E7AF24;
+    border-radius: 10px;
+    width: 106px;
+    font-size: 11px;
+  }
+
+  .textformorder {
+    color: #404041;
+    font-size: 9px;
+    text-align: left;
+    padding: 10px 7px;
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 7px;
+    margin: 6px 9px;
+    padding-top: 6px;
+    padding-left: 11px;
+    padding-right: 0px;
+  }
+
+  .boxorder {
+    width: max;
+    height: 123px;
+    border: 1px solid #E7AF24;
+  }
+
+  .boxgraph {
+    width: max;
+    height: 112px;
+    border: 1px solid #404041;
+  }
+
+  .textcardg {
+    font-size: 9px;
+    margin-top: 0px;
+    margin-right: 37px;
+    margin-left: 5px;
+    color: #05914D;
+  }
+
+  .text0 {
+    color: #404041;
+    font-size: 7px;
+    margin: 7px 25px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 35px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 30px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 25px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 20px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 15px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 12px;
+  }
+
+  /*--font size--*/
+  .menu {
+    margin-left: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbartext {
+    color: #E7AF24;
+    padding-right: 50px;
+  }
+
+  .space {
+    padding: 0px 30px
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 447px;
+  }
+
+  .logo {
+    width: 150px;
+    padding-top: 10px;
+  }
+
+  .curren_icon {
+    padding-right: 3px;
+    padding-left: px;
+    width: 13px;
+    margin-left: 16px;
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    text-align: left;
+    margin: 0px 29px;
+    font-size: 10px;
+    padding-top: 15px;
+  }
+
+  .form-control.ex {
+    border: 1px solid #E7AF24;
+    border-radius: 10px;
+    width: 144px;
+  }
+
+  .text0 {
+    color: #404041;
+    font-size: 10px;
+    margin: 6px 32px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .btn-order {
+    color: #404041;
+    margin-right: 150px;
+    font-size: 10px;
+    border-radius: 0px;
+    padding: 5px 2px;
+  }
+
+  .textcard {
+    font-size: 11px;
+    margin-top: 0px;
+    margin-right: 24px;
+    margin-left: 22px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardr {
+    font-size: 11px;
+    margin-top: 0px;
+    margin-right: 24px;
+    margin-left: 22px;
+    color: #EE2926;
+  }
+
+  .subicon {
+    width: 7px;
+    margin-right: 5px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    text-align: left;
+    margin: 0px 29px;
+    font-size: 10px;
+    padding-top: 15px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 16px 17px;
+    margin-top: 7px;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+    padding-right: 45px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 20px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 20px;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 418px;
+    font-size: 13px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 165px;
+  }
+
+  .textstep {
+    color: #E7AF24;
+    text-align: left;
+    font-size: 17px;
+    margin-left: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 205px;
+    margin-left: 27px;
+  }
+
+  .iconarrow {
+    padding-left: 56px;
+    padding-top: 85px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 0px;
+  }
+
+  .btn-group {
+    padding: 0px 0px;
+    background-color: #E7AF24;
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 40px;
+    text-align: center;
+  }
+
+  .btn-choose {
+    border: none;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 20px;
+    margin: 0px 50px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    font-size: 10px;
+  }
+
+  .textfund {
+    font-size: 10px;
+    color: #404041;
+    margin-top: 10px;
+  }
+
+  .textsubfund {
+    font-size: 13px;
+    color: #404041;
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 63px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 17px;
+    margin-right: 0px;
+    font-size: 12px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 12px;
+  }
+
+  .formcoin {
+    padding: 10px 100px;
+  }
+
+  .pagination {
+    padding: 0px 450px;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 12px;
+  }
+
+  .textshow {
+    color: #E7AF24;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+  }
+
+  .form-control-search {
+    border: 2px solid #E7AF24;
+    border-radius: 12px;
+    height: 25px;
+    width: 180px;
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 4px;
+    padding-right: 9px;
+  }
+
+  .textsubex {
+    color: #404041;
+    font-size: 7px;
+    margin: 6px 3px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .textsubex0 {
+    color: #404041;
+    font-size: 9px;
+    margin: 6px 20px;
+    padding-top: 11px;
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 10px;
+    margin: 6px 14px;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 2px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 12px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 15px;
+    padding-right: 0px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .inforbox {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media screen and (min-width:1280px) and (max-width:1359px) {
+  .menu {
+    margin-left: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .space {
+    padding: 0px 100px;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 595px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 468px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .btn-choose {
+    border: none;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    color: #E7AF24;
+    font-size: 25px;
+    margin: 0px 50px;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 17px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 38px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 1px;
+  }
+
+  .textfund {
+    font-size: 12px;
+    color: #404041;
+    margin-top: 10px;
+    margin-left: 18px;
+  }
+
+  .pagination {
+    padding: 0px 580px;
+  }
+
+  .logo {
+    width: 212px;
+    margin-top: 4px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 280px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 241px;
+    margin-left: 49px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 15px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 10px 30px;
+    margin-top: 27px;
+    margin-bottom: 20px;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 584px;
+  }
+}
+
+@media screen and (min-width:1360px) and (max-width:1439px) {
+  .menu {
+    margin-left: 362px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 17px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 39px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 626px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 419px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .textfund {
+    font-size: 13px;
+    color: #404041;
+    margin-top: 11px;
+  }
+
+  .pagination {
+    padding: 0px 600px;
+  }
+
+  .marketbox {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F8F9FA;
+    border-bottom: 2px solid #E7AF24;
+  }
+
+  .space {
+    padding: 0px 70px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 19px;
+  }
+
+  .logo {
+    width: 228px;
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 12px;
+    padding-right: 10px;
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    text-align: left;
+    margin: 14px 27px;
+    font-size: 14px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    text-align: left;
+    margin: 14px 27px;
+    font-size: 14px;
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 10px;
+    margin: 6px 9px;
+    padding-top: 6px;
+    padding-left: 21px;
+    padding-right: 11px;
+  }
+}
+
+@media screen and (min-width:1440px) and (max-width:1599px) {
+  .menu {
+    margin-left: 480px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 10px 30px;
+    margin-top: 21px;
+  }
+
+  .space {
+    padding: 0px 120px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 17px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0;
+    font-size: 15px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 0px;
+    font-size: 15px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 80px;
+    font-size: 13px;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 650px;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 657px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 482px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 5px;
+    width: 29px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .pagination {
+    padding: 0px 657px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 15px;
+  }
+
+  .textred {
+    color: #EE2926;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .textgreen {
+    color: #05914D;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 23px;
+    margin-left: 10px;
+  }
+
+  .infor {
+    color: #404041;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  /*.logo {
+    width: 200px;
+    margin-top: 6px;
+}*/
+  .navbartext {
+    color: #E7AF24;
+    padding-left: 50px;
+    padding-right: 0px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+  }
+
+  .text0 {
+    color: #404041;
+    font-size: 12px;
+    margin: 6px 41px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 14px;
+    padding-right: 10px;
+  }
+
+  .textcard {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-right: 45px;
+    margin-left: 31px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardr {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-right: 47px;
+    margin-left: 44px;
+    color: #EE2926;
+  }
+
+  .textcardg {
+    font-size: 14px;
+    margin-top: 0px;
+    margin-right: 47px;
+    margin-left: 44px;
+    color: #05914D;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 185px;
+    height: 30px;
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    text-align: left;
+    margin: 11px 29px;
+    font-size: 12px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    text-align: left;
+    margin: 11px 29px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width:1600px) and (max-width:1919px) {
+  .menu {
+    margin-left: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 10px;
+    width: 40px;
+    margin-left: 31px;
+    margin-bottom: 20px;
+  }
+
+  .pagination {
+    padding: 0px 735px;
+  }
+
+  .btn-group {
+    padding: 0px 40px;
+    background-color: #E7AF24;
+    cursor: pointer;
+    color: #fff;
+    font-size: 28px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 750px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 559px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 145px;
+    font-size: 13px;
+  }
+
+  .btn-choose {
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 28px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 15px;
+    margin: 12px 15px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 10px 30px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-top: 7px;
+  }
+
+  .inforbox {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 10px;
+    margin: 6px 9px;
+    padding-top: 6px;
+    padding-left: 25px;
+    padding-right: 11px;
+  }
+}
+
+@media screen and (min-width:1920px) and (max-width:2559px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 45px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 40px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 35px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 30px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 25px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 20px;
+  }
+
+  /*--font size--*/
+  .menu {
+    margin-left: 820px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 880px;
+  }
+
+  .form-control {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 624px;
+  }
+
+  .input-group-prepend {
+    margin-right: -1px;
+    width: 628px;
+  }
+
+  .logof {
+    width: 70px;
+    margin-left: 890px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 634px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .container {
+    max-width: 1700px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 27px;
+    margin: 25px 15px;
+  }
+
+  .textsubex0 {
+    color: #404041;
+    font-size: 15px;
+    margin: 15px 53px;
+    padding-top: 6px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 15px;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 18px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 12px;
+    text-align: center;
+    margin: 10px 15px;
+    font-size: 20px;
+  }
+
+  .btn-group {
+    padding: 0px 40px;
+    background-color: #E7AF24;
+    cursor: pointer;
+    color: #fff;
+    font-size: 34px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+
+  .btn-choose {
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 34px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 200px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 10px 30px;
+    margin-top: 28px;
+  }
+
+  .textwhite {
+    color: #fff;
+    padding-left: 13px;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 300px;
+    height: 35px;
+    margin-left: 125px;
+    margin-top: 10px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 35px;
+    margin-top: 10px;
+  }
+
+  .iconarrow {
+    padding-left: 120px;
+    padding-top: 97px;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 255px;
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 26px;
+    /* padding-right: 22px; */
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 17px;
+    margin: 6px 9px;
+    padding-top: 6px;
+    padding-left: 25px;
+    padding-right: 11px;
+  }
+
+  .btn-order {
+    color: #404041;
+    margin-right: 150px;
+    font-size: 15px;
+    border-radius: 0px;
+    padding: 5px 4px;
+  }
+
+  .textsubex {
+    color: #404041;
+    font-size: 15px;
+    margin: 6px 13px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    text-align: left;
+    margin: 13px 26px;
+    font-size: 16px;
+    padding-right: 28px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    text-align: left;
+    margin: 13px 26px;
+    font-size: 16px;
+    padding-right: 28px;
+  }
+
+  .text0 {
+    color: #404041;
+    font-size: 16px;
+    margin: 6px 56px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+}
+
+@media screen and (min-width:2560px) {
+
+  /*--font size--*/
+  .h1,
+  h1 {
+    font-size: 55px;
+  }
+
+  .h2,
+  h2 {
+    font-size: 50px;
+  }
+
+  .h3,
+  h3 {
+    font-size: 45px;
+  }
+
+  .h4,
+  h4 {
+    font-size: 40px;
+  }
+
+  .h5,
+  h5 {
+    font-size: 30px;
+  }
+
+  .h6,
+  h6 {
+    font-size: 20px;
+  }
+
+  /*--font size--*/
+  /*--navbar--*/
+  .navbartext {
+    color: #E7AF24;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  /*--navbar--*/
+  .menu {
+    margin-left: 1200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .space {
+    padding: 6px 160px;
+  }
+
+  .textex {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px 0px;
+    padding-top: 6px;
+    padding-left: 31px;
+    padding-right: 55px;
+  }
+
+  .textsubex {
+    color: #404041;
+    font-size: 14px;
+    margin: 6px 15px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .logof {
+    width: 98px;
+    margin-left: 1182px;
+  }
+
+  .textf {
+    color: #fff;
+    margin-left: 831px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .textsmall {
+    color: #fff;
+    padding-left: 275px;
+    font-size: 21px;
+  }
+
+  .textwhitef {
+    color: #fff;
+    padding-top: 38px;
+    padding-left: 111px;
+  }
+
+  .btn-group {
+    padding: 0px 40px;
+    background-color: #E7AF24;
+    cursor: pointer;
+    color: #fff;
+    font-size: 38px;
+    margin: 5px 50px;
+    text-align: center;
+  }
+
+  .btn-choose {
+    border-radius: 0px;
+    outline: none;
+    padding: 0px 40px;
+    background-color: #fff;
+    cursor: pointer;
+    color: #E7AF24;
+    font-size: 38px;
+    margin: 0px 50px;
+    text-align: center;
+  }
+
+  .iconsearch {
+    width: 30px;
+  }
+
+  .form-control-search {
+    border: 3px solid #E7AF24;
+    border-radius: 12px;
+    height: 35px;
+    width: 300px;
+  }
+
+  .texth {
+    color: #E7AF24;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 15px;
+  }
+
+  .textsubh {
+    color: #404041;
+    text-align: center;
+    font-size: 28px;
+    margin: 11px 15px;
+  }
+
+  .textsubred {
+    color: #EE2926;
+    margin-bottom: 12px;
+    text-align: center;
+    margin: 11px 15px;
+    font-size: 28px;
+  }
+
+  .textsubredex {
+    color: #EE2926;
+    margin-bottom: 12px;
+    text-align: center;
+    margin: 11px 41px;
+    font-size: 17px;
+  }
+
+  .textsubgreenex {
+    color: #05914D;
+    margin-bottom: 12px;
+    text-align: center;
+    margin: 11px 41px;
+    font-size: 17px;
+  }
+
+  .textsubex0 {
+    color: #404041;
+    font-size: 15px;
+    margin: 6px 69px;
+    padding-top: 6px;
+  }
+
+  .textfund {
+    font-size: 27px;
+    color: #404041;
+    margin-top: 20px;
+  }
+
+  .page-link {
+    border: 0px;
+    color: #404041;
+    font-size: 25px;
+  }
+
+  .pagination {
+    padding: 0px 1200px;
+  }
+
+  .coin_icon {
+    margin-top: 20px;
+    padding-right: 8px;
+    width: 54px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .textsubfund {
+    font-size: 32px;
+    color: #404041;
+    margin-top: 49px;
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  .btn-deposit {
+    color: #05914D;
+    border-bottom: 2px solid #05914D;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+
+  .btn-withdraw {
+    color: #EE2424;
+    border-bottom: 2px solid #EE2424;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+
+  .btn-tradef {
+    color: #404041;
+    border-bottom: 2px solid #404041;
+    border-radius: 0px;
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 30px;
+  }
+
+  .container {
+    max-width: 2200px;
+  }
+
+  .head {
+    width: 260px;
+    color: #E7AF24;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 1175px;
+  }
+
+  .form-control-search {
+    border: 2px solid #E7AF24;
+    border-radius: 12px;
+    height: 40px;
+    width: 300px;
+  }
+
+  .btn-show {
+    border-bottom: 2px solid #E7AF24;
+    color: #E7AF24;
+    margin-right: 150px;
+    font-size: 25px;
+  }
+
+  .thb {
+    width: 146px;
+    margin-bottom: 26px;
+  }
+
+  .btn-box {
+    border: 4px solid #E7AF24;
+    padding: 37px 150px;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .textform {
+    color: #E7AF24;
+    font-size: 35px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 8px;
+  }
+
+  .form-control {
+    border: 2px solid #E7AF24;
+    border-radius: 15px;
+    height: 50px;
+    padding-top: 10px;
+    margin-bottom: 4px;
+  }
+
+  .textformblack {
+    color: #404041;
+    font-size: 30px;
+    text-align: left;
+    padding-right: 50px;
+    padding-top: 8px;
+  }
+
+  .formcoin {
+    padding: 10px 200px;
+  }
+
+  .btn-trade {
+    border: 2px solid #E7AF24;
+    border-radius: 15px;
+    color: #E7AF24;
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+
+  .text {
+    color: #E7AF24;
+    padding-top: 20px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .infor {
+    color: #404041;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  .curren_icon {
+    padding-right: 10px;
+    padding-left: px;
+    width: 40px;
+    margin-left: -6px;
+  }
+
+  .text0 {
+    color: #404041;
+    font-size: 15px;
+    margin: 6px 73px;
+    padding-top: 6px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+  }
+
+  .textorder {
+    color: #404041;
+    font-size: 18px;
+    margin: 6px 18px;
+    padding-top: 6px;
+    padding-left: 25px;
+    padding-right: 30px;
+  }
+
+  .textred {
+    color: #EE2926;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  .textgreen {
+    color: #05914D;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  .boxgraph {
+    width: 1000px;
+    height: 280px;
+    border: 1px solid #404041;
+  }
+
+  .textcard {
+    font-size: 19px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 40px;
+    color: #404041;
+    text-align: right;
+  }
+
+  .textcardg {
+    font-size: 21px;
+    margin-top: 0px;
+    margin-right: 46px;
+    margin-left: 55px;
+    color: #05914D;
+  }
+
+  .textcardr {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 40px;
+    margin-left: 55px;
+    color: #EE2926;
+  }
+
+  .texts {
+    margin-left: 0px;
+    font-size: 29px;
+    color: #404041;
+  }
+
+  .btn-current {
+    background: #fff;
+    color: #E7AF24;
+    padding: 9px 40px;
+  }
+
+  .textblack {
+    color: #404041;
+    margin-bottom: 17px;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+
+  .btn-admin {
+    border: 0px;
+    color: #E7AF24;
+    padding: 10px 30px;
+    margin-top: 60px;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .step {
+    color: #E7AF24;
+    text-align: left;
+    padding-top: 150px;
+    padding-left: 400px;
+    font-size: 60px;
+    padding-bottom: 150px;
+  }
+
+  .dash {
+    border-left: 4px dashed #E7AF24;
+  }
+
+  .iconadmin {
+    width: 45px;
+  }
+
+  .icon {
+    width: 58px;
+  }
+
+  .textwhite {
+    color: #fff;
+  }
+
+  .form-controlcurren {
+    border: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 400px;
+    height: 50px;
+    margin-left: 180px;
+  }
+
+  .btn-dropdown {
+    background: #fff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 22px;
+  }
+
+  .iconarrow {
+    padding-left: 160px;
+    padding-top: 100px;
+  }
+
+  .btn-submit {
+    border: 3px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  .form-control.ex {
+    border: 2px solid #E7AF24;
+    border-radius: 10px;
+    width: 314px;
+  }
+
+  .drop_curren_icon {
+    padding-right: 10px;
+    width: 42px;
+    margin-left: 10px;
+  }
+
+  .btn-copy {
+    border: 2px solid #E7AF24;
+    padding-bottom: 0px;
+    color: #E7AF24;
+    padding: 4px 28px;
+    font-size: 24px;
+  }
+}
