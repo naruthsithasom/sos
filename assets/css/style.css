@@ -147,13 +147,20 @@ body {
   background: #F8F9FA;
   border-bottom: 2px solid #E7AF24;
 }
-
+/* orignal */
+/* 
 .headtext {
   width: 500px;
   color: #E7AF24;
 
   padding-top: 5px;
   padding-left: 150px;
+  border-bottom: 2px solid #E7AF24;
+} */
+.headtext-new {
+  text-align: center;
+  width: 80%;
+  color: #E7AF24;
   border-bottom: 2px solid #E7AF24;
 }
 

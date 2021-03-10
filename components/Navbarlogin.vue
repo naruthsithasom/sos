@@ -24,9 +24,7 @@
                   <li class="menu">
                     <a class="navbartext" href="/"><h5>HOME</h5></a>
                     <a class="navbartext" href="/market"><h5>MARKET</h5></a>
-                    <a class="navbartext" href="/exchange"
-                      ><h5>EXCHANGE</h5></a
-                    >
+                    <a class="navbartext" href="/exchange"><h5>EXCHANGE</h5></a>
                     <div class="dropdown">
                       <a
                         class="navbartext h5 dropdown-toggle"
@@ -43,9 +41,7 @@
                         class="dropdown-menu"
                         aria-labelledby="navbarDropdown"
                       >
-                        <a class="droptext dropdown-item" href="/fund"
-                          >Fund</a
-                        >
+                        <a class="droptext dropdown-item" href="/fund">Fund</a>
                         <a class="droptext dropdown-item" href="/deposit"
                           >Deposit</a
                         >
@@ -68,7 +64,5 @@
   </div>
 </template>
 <script>
-export default {
-
-}
+export default {}
 </script>

@@ -55,71 +55,37 @@ export default {
       },
     ],
   },
+  ssr: false,
+  target: "static",
   server: {
     port: 80,
   },
-  // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "bootstrap-vue/dist/bootstrap-vue.css",
     "~/assets/css/style.css",
     "~/assets/css/animate.css",
   ],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~plugins/app.js"],
+  plugins: [{ src: "~plugins/bootstrap-vue.js" ,mode:"client"},],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    "bootstrap-vue/nuxt",
-    // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
-    "@nuxtjs/auth-next",
-  ],
+  modules: ["bootstrap-vue/nuxt", "@nuxtjs/axios", "@nuxtjs/auth-next"],
   bootstrapVue: {
     icons: true,
   },
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL : "https://api.bitkub.com"
+    baseURL: "https://api.bitkub.com",
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-  // auth: {
-  //   strategies: {
-  //     local: {
-  //       token: {
-  //         property: 'token',
-  //         // required: true,
-  //         // type: 'Bearer'
-  //       },
-  //       user: {
-  //         property: 'user',
-  //         // autoFetch: true
-  //       },
-  //       endpoints: {
-  //         login: { url: '/api/auth/login', method: 'post' },
-  //         logout: { url: '/api/auth/logout', method: 'post' },
-  //         user: { url: '/api/auth/user', method: 'get' }
-  //       }
-  //     }
-  //   }
-  // },
   auth: {
     auth: {
       redirect: {
-        login: '/login',
-        // logout: '/',
-        // callback: '/login',
-        // home: '/'
-      }
+        login: "/login",
+      },
     },
     strategies: {
       local: {
@@ -130,16 +96,15 @@ export default {
             propertyName: "modal.name",
           },
           logut: {
-            url: "https://api/sign_out",//link sign_out
+            url: "https://api/sign_out", //link sign_out
             method: "delete",
           },
           user: {
-            url : "https://api/result",// result
-            method: 'get',
-            propertyName: "modal"
+            url: "https://api/result", // result
+            method: "get",
+            propertyName: "modal",
           },
         },
-        // tokenName: "Authorization"
       },
     },
   },

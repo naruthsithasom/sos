@@ -1,5 +1,6 @@
 <template>
   <div>
+    <client-only>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <button
         class="navbar-toggler"
@@ -51,6 +52,7 @@
       </div>
     </nav>
     <!--mobile-->
+    </client-only>
   </div>
 </template>
 <script>
