@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbarlogin />
+    <!-- <Navbarlogin /> -->
     <div style="padding-top: 30px"></div>
     <div class="headt float-left">
       <h2>WALLET</h2>
@@ -185,7 +185,7 @@
   </div>
 </template>
 <script>
-import Navbarlogin from "../components/Navbarlogin"
+// import Navbarlogin from "../components/Navbarlogin"
 export default {
   middleware: 'auth',
   components:{

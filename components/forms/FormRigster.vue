@@ -1,14 +1,14 @@
 <template>
   <div>
     <div style="padding-top: 30px"></div>
-    <b-container classs="container">
+    <b-container >
       <b-row>
         <b-col class="text-center"
           ><h2 class="text-warning">Register</h2></b-col
         >
       </b-row>
     </b-container>
-    <b-container class="container">
+    <b-container>
       <b-card class="wrap-register">
         <b-form-group
           label="USER:"
@@ -117,6 +117,7 @@
         </b-modal>
       </div>
     </b-container>
+    <div style="padding-top: 50px"></div>
   </div>
 </template>
 <script>
@@ -165,7 +166,7 @@ export default {
     rgba(255, 193, 7, 1) 0%,
     rgba(219, 163, 0, 1) 100%
   );
-
+ 
   padding-top: 40px;
   border: 1px solid #b88a00;
   border-radius: 20px;

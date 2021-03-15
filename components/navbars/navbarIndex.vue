@@ -1,5 +1,7 @@
 <template>
-  <nav
+  <div>
+    <client-only>
+<nav
     class="navbar navbar-expand-lg navbar-light bg-light nav-border-buttom p-0"
   >
     <div class="container-fluid toggle-bg p-nav">
@@ -30,17 +32,17 @@
               >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link toggle-text" aria-current="page" href="#"
+              <a class="nav-link toggle-text" aria-current="page" href="/market"
                 ><p>MARKETS</p></a
               >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link toggle-text" aria-current="page" href="#"
+              <a class="nav-link toggle-text" aria-current="page" href="/exchange"
                 ><p>EXCHANGE</p></a
               >
             </li>
             <li class="nav-item px-2">
-              <a class="nav-link toggle-text" aria-current="page" href="#"
+              <a class="nav-link toggle-text" aria-current="page" href="/register"
                 ><p>REGISTER</p></a
               >
             </li>
@@ -57,6 +59,7 @@
           </ul>
         </span>
       </div>
+
       <div>
         <b-modal id="modal-center" centered title="Login" @ok="handleOk">
           <div class="my-4">
@@ -108,8 +111,11 @@
       </div>
     </div>
   </nav>
+
+    </client-only>
+  </div>
 </template>
- <script>
+<script>
 export default {
   components: {},
   data() {

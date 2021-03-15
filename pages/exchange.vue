@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbarlogin />
+    <!-- <Navbarlogin /> -->
     <div style="padding-top: 30px"></div>
     <div class="headt float-left">
       <h2>EXCHANGE</h2>
@@ -487,16 +487,16 @@
       </div>
     </div>
     <div style="padding-bottom: 80px"></div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 <script>
-import Poplogin from "@/components/Poplogin"
-import Navbarlogin from "../components/Navbarlogin"
+// import Poplogin from "@/components/Poplogin"
+// import Navbarlogin from "../components/Navbarlogin"
 export default {
+  middleware: "auth",
   components: {
-    Poplogin,
-    Navbarlogin,
+     
   },
   head: {
     // ใส้กราฟฟิก

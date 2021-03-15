@@ -62,7 +62,8 @@ export default {
   },
   css: [
     "bootstrap-vue/dist/bootstrap-vue.css",
-    "~/assets/css/style.css",
+     "~/assets/css/style.css",
+    // "~/assets/css/new-style.css",
     "~/assets/css/animate.css",
   ],
 
