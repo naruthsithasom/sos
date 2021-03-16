@@ -2,7 +2,9 @@
   <div>
     <client-only>
       <NavbarChild />
-      <section class="">
+      <div class="py-5"></div>
+      <FromRegisterNew />
+      <!-- <section class="">
         <div class="">
           <div class="register-text-head">
             <div class="row mx-0">
@@ -67,8 +69,7 @@
               <div class="col-12 col-lg-4 col-md-4"></div>
             </div>
           </div>
-          <!-- Modal -->
-          <div
+           <div
             class="modal fade"
             id="exampleModalLong"
             tabindex="-1"
@@ -160,16 +161,18 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <div class="py-5"></div>
     </client-only>
   </div>
 </template>
 <script>
 import NavbarChild from "../components/navbars/navbarChild"
+import FromRegisterNew from "../components/forms/formRegisterNew"
 export default {
   components: {
     NavbarChild,
+    FromRegisterNew,
   },
   head: {
     title: "หน้าลงทะเบียน",
