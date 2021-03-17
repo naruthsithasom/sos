@@ -2,7 +2,9 @@
   <div>
     <client-only>
       <NavbarChild />
-      <div class="wrap-login">
+      <div class="py-5"></div>
+      <FormLogin />
+      <!-- <div class="wrap-login">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content boxlogin">
             <div class="modal-header">
@@ -90,16 +92,19 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <div class="py-5"></div>
     </client-only>
   </div>
 </template>
 <script>
 import NavbarChild from "../components/navbars/navbarChild"
- export default {
-   components: {
-     NavbarChild
-   },
+import FormLogin from "../components/forms/formLogin"
+export default {
+  components: {
+    NavbarChild,
+    FormLogin,
+  },
   head: {
     bodyAttrs: {
       class: "bg-filter",
@@ -150,6 +155,7 @@ import NavbarChild from "../components/navbars/navbarChild"
     }
   },
   */
+
 }
 </script>
 <style scoped>
