@@ -56,7 +56,7 @@
                 <li class="nav-item dropdown primary">
                   <a
                     class="nav-link   toggle-text"
-                    href="#"
+                    href="/profile"
                     id="navbarDropdown"
                     role="button"
                     data-toggle="dropdown"
@@ -66,7 +66,8 @@
                     <p>WALLET</p>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Fund</a>
+                    <a class="dropdown-item" href="/profile">Profile</a>
+                    <a class="dropdown-item" href="/profile">Fund</a>
                     <a class="dropdown-item" href="#">Deposit</a>
                     <a class="dropdown-item" href="#">Withdraw</a>
                     <a class="dropdown-item" href="#">Transition History</a>

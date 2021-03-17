@@ -18,7 +18,7 @@
                   label-align-sm="right"
                 >
                   <b-form-input
-                    v-model="form.email"
+                    v-model.trim="form.email"
                     class="border border-1"
                   ></b-form-input>
                 </b-form-group>
@@ -29,7 +29,7 @@
                   label-align-sm="right"
                 >
                   <b-form-input
-                    v-model="form.password"
+                    v-model.trim="form.password"
                     class="border border-1"
                     type="password"
                   ></b-form-input>
@@ -41,7 +41,7 @@
                   label-align-sm="right"
                 >
                   <b-form-input
-                    v-model="form.confirmPwd"
+                    v-model.trim="form.confirmPwd"
                     class="border border-1"
                     type="password"
                   ></b-form-input>
@@ -55,12 +55,44 @@
                     >
                   </div>
                 </b-form-group>
+                <!-- <b-form-group
+                  label=""
+                  label-cols-sm="4"
+                  label-align-sm="right"
+                  class="mb-0"
+                >
+                  <b-form-text class="">
+                    <ul>กรุณาสร้างรหัสผ่านตามคำชี้แนะด้านล่างเพื่อความปลอดภัยของบัญชี
+                      <li>รหัสผ่านต้องมีอักษรภาษาอังกฤษตัวใหญ่ (A-Z)</li>
+                      <li>รหัสผ่านต้องมีอักษรภาษาอังกฤษตัวเล็ก (a-z)</li>
+                      <li>รหัสผ่านต้องมีตัวเลข (0-9) รหัสผ่านต้องมีอักขระพิเศษ !@#$%^*-_+=)</li>
+                    </ul>   
+                  </b-form-text>
+                </b-form-group> -->
+                <b-form-group
+                  label=""
+                  label-cols-sm="4"
+                  label-align-sm="right"
+                  class="mb-0"
+                >
+                  <b-form-text class="text-center"
+                    ><a href="/login" class="mr-2"
+                      >มีบัญชีอยู่แล้ว ล็อกอินที่นี่</a
+                    >
+                    <b-icon
+                      icon="arrow-right-square-fill"
+                      scale="2"
+                      variant="warning"
+                    ></b-icon>
+                  </b-form-text>
+                </b-form-group>
               </b-form-group>
             </b-card>
           </b-col>
           <b-col lg="3" md="3" sm="12" class=""></b-col>
         </b-row>
       </b-container>
+
       <b-container fluid v-show="showRegisterStep2">
         <b-row class="pt-4">
           <b-col lg="3" md="3" sm="12"></b-col>
@@ -75,10 +107,14 @@
               ยื่นยันอีเมล์ที่คุณต้องการใช้กับ sos เพื่อข่าวสาร
               การแจ้งเตือนและลิงค์ยืนยัน
             </p>
-            <input class="w-100 border border-1" :value="form.email" />
+            <input
+              class="w-50 border border-1"
+              :value="form.email"
+              :disabled="true"
+            />
             <b-button
               @click="handleOkConfirm"
-              class="mt-3 btn w-100"
+              class="mt-3 btn w-50"
               type="submit"
               variant="outline-warning"
               >ยื่นยันอีเมล์</b-button
@@ -154,8 +190,7 @@ export default {
   computed: {
     isClickCheckBox() {
       return this.statusCheckBox === "yes"
-      //console.log(asdasdasd)
-    },
+     },
     isPasswordMatching() {
       return true
     },
@@ -187,8 +222,8 @@ export default {
 
       this.boxTwo = ""
       this.$bvModal
-        .msgBoxOk("ระบบได้ส่งลิ้งไปยังยื่นยันอีเมล์ของท่าน!", {
-          title: "ลงทะเบียน",
+        .msgBoxOk("ระบบได้ส่งลิ้งยื่นยันไปยังอีเมล์ของท่าน!", {
+          title: "สมัครสมาชิก",
           size: "sm",
           buttonSize: "sm",
           okVariant: "warning",
@@ -198,7 +233,7 @@ export default {
         })
         .then((value) => {
           this.boxTwo = value
-          if(this.boxTwo){
+          if (this.boxTwo) {
             console.log("Welcome to sos..")
             this.$router.push("/")
           } else {
@@ -206,7 +241,7 @@ export default {
           }
         })
         .catch((err) => {
-          // An error occurred
+         console.log("register error>>",err)
         })
     },
   },

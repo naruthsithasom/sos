@@ -791,8 +791,8 @@ hr {
 }
 
 .input-group-prepend {
-  margin-right: -1px;
-  width: 411px;
+  /* margin-right: -1px; */
+  /* width: 411px; */
 }
 
 /*-----------------------------------------
