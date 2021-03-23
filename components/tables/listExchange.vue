@@ -454,15 +454,15 @@ export default {
     }
   },
     async mounted() {
-    await this.$axios
-      .$get(`/api/market/ticker`)
-      .then((res) => {
-        this.lists = res
-        this.listName = [Object.keys(res)]
-        this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
-        //console.log("updated>>", res.THB_BTC.percentChange)
-      })
-      .catch(() => console.log("api error>>", error))
+    // await this.$axios
+    //   .$get(`/api/market/ticker`)
+    //   .then((res) => {
+    //     this.lists = res
+    //     this.listName = [Object.keys(res)]
+    //     this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
+    //     //console.log("updated>>", res.THB_BTC.percentChange)
+    //   })
+    //   .catch(() => console.log("api error>>", error))
     console.log("fav>>", this.favorites)
     console.log("name>>", this.listName)
   },

@@ -168,7 +168,7 @@
           </div>
         </b-modal>
       </b-container>
-    </client-only>
+     </client-only>
   </div>
 </template>
 <script>

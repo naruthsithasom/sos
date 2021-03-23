@@ -20,8 +20,8 @@
         <span class="nav-menu-logo">
           <img
             class="toggle-img"
-            src="~/assets/images/logo.png"
-            width="150px"
+            src="~/assets/images/wgc.png"
+            width="80px"
           />
         </span>
         <span class="nav-menu-lg">

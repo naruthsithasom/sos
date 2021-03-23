@@ -91,20 +91,20 @@ export default {
     strategies: {
       local: {
         endpoints: {
-          login: {
-            url: "https://api/sign_in", //link sign_in
-            method: "post",
-            propertyName: "modal.name",
-          },
-          logut: {
-            url: "https://api/sign_out", //link sign_out
-            method: "delete",
-          },
-          user: {
-            url: "https://api/result", // result
-            method: "get",
-            propertyName: "modal",
-          },
+          // login: {
+          //   url: "https://api/sign_in", //link sign_in
+          //   method: "post",
+          //   propertyName: "modal.name",
+          // },
+          // logut: {
+          //   url: "https://api/sign_out", //link sign_out
+          //   method: "delete",
+          // },
+          // user: {
+          //   url: "https://api/result", // result
+          //   method: "get",
+          //   propertyName: "modal",
+          // },
         },
       },
     },

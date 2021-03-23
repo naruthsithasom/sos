@@ -58,8 +58,7 @@
                       :src="require(`~/assets/images/symbol/${fav.id}.png`)"
                     />
                   </span>
-                  <!-- <span>{{ fav.id }}</span> -->
-                  <span class="">{{ fav.id === 1 ? "BTC" : null }}</span>
+                   <span class="">{{ fav.id === 1 ? "BTC" : null }}</span>
                   <span class="">{{ fav.id === 2 ? "ETH" : null }}</span>
                   <span class="">{{ fav.id === 8 ? "USDT" : null }}</span>
                   <span class="">{{ fav.id === 10 ? "XRP" : null }}</span>
@@ -193,7 +192,6 @@ export default {
       showFav: true,
       showAllMarkets: false,
       listFav: ["BTC", "ETH", "USDT", "XRP"],
-      favorites: [],
       lists: [],
       CURRENCY: "ETH",
     }

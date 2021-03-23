@@ -113,13 +113,13 @@
 
       <Nuxt />
 
-      <footer class="container-fluid p-0">
+      <!-- <footer class="container-fluid p-0 ">
         <div class="row footer-box4 mx-0 px-0 d-flex align-items-center px-4">
           <div class="col-4 text-center px-0">
             <p class="text-white">2020 SOSNATION All Right Reserved</p>
           </div>
           <div class="col-4 text-center p-0 m-0">
-            <img src="~/assets/images/logo_f-01.png" alt="" />
+            <img src="~/assets/images/wgc.png" alt="" width="120px"/>
           </div>
           <div class="col-4 text-center p-0 m-0">
             <ul class="nav justify-content-end">
@@ -135,7 +135,7 @@
             </ul>
           </div>
         </div>
-      </footer >
+      </footer > -->
     </client-only>
   </div>
 </template>
