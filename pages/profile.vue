@@ -73,10 +73,10 @@ export default {
   },
   data() {
     return {
-      showStep1: false,
+      showStep1: true,
       showStep2: false,
       showStep3: false,
-      showStep4: true,
+      showStep4: false,
       showStep5: false,
       form:{},
     }
