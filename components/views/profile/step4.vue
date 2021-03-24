@@ -8,7 +8,7 @@
       <b-icon icon="camera-fill" font-scale="2"></b-icon>
       <b-icon icon="file-earmark-person" font-scale="2"></b-icon>
     </div>
-    <b-input-group prepend="เลขบัตรประจำตัวประชาชน" size="sm" class="my-5">
+    <b-input-group prepend="เลขบัตรประจำตัวประชาชน" size="sm" class="mt-5">
       <b-input
         v-model="id_card"
         size="sm"
@@ -17,69 +17,70 @@
         maxlength="13"
       ></b-input>
     </b-input-group>
-    <b-input-group prepend="เลเซอร์โค้ด * " size="sm" class="mt-5 mb-2">
+    <b-form-text text-variant="danger" class="m-0" v-if="check && (id_card.length == 13 ? false : true)"> กรุณากรอกหมายเลขบัตรประชาชนให้ถูกต้อง </b-form-text>
+    <div class="my-4"></div>
+    <b-input-group prepend="เลเซอร์โค้ด * " size="sm" class="">
       <b-input
         v-model="code_card"
         size="sm"
         class="border border-1"
         type="tel"
-        maxlength="13"
+        maxlength="12"
       ></b-input>
     </b-input-group>
-    <b-input-group class="mb-5">
-      <small
-        >* หลักที่ 1-2 ต้องเป็นตัวหนังสือและ หลักที่ 3-12 ต้องเป็นตัวเลข</small
-      >
+    <b-input-group class="">
+    <b-form-text text-variant="primary" class="m-0">* หลักที่ 1-2 ต้องเป็นตัวหนังสือและ หลักที่ 3-12 ต้องเป็นตัวเลข</b-form-text>
+    <b-form-text text-variant="danger" class="m-0" v-if="check && (code_card.length == 12 ? false : true)"> กรุณากรอกหมายเลขบัตรประชาชนให้ถูกต้อง </b-form-text>
     </b-input-group>
-
-    <b-input-group>
+    <div class="my-4"></div>
+     <b-input-group>
       <b-form-checkbox-group
         v-model="checkList"
         :options="options1"
-        class="mb-3"
+        class="text-dark"
         value-field="item"
         text-field="name"
         size="sm"
         stacked
       ></b-form-checkbox-group>
     </b-input-group>
-
+    <div class="my-4"></div>
     <b-container>
       <b-img
         src="~/assets/images/show_id_card.png"
-        class="my-5"
+        class=""
         fluid-grow
       ></b-img
-      ><br />
+      >
+      <div class="my-4"></div>
       <b-form-group
         label="รูปภาพสำหรับการยืนยัน (ตัวอย่าง?):"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
       >
-        <b-form-file v-model="file1" id="file-small" size="sm"></b-form-file>
-        <small
-          >*ขนาดไม่เกิน 10MB ประเภท jpg, png, bmp, jpeg หรือ gif เท่านั้น</small
-        >
+        <b-form-file v-model="file1"  size="sm"></b-form-file>
+        <b-form-text text-variant="primary" class="m-0">* ขนาดไม่เกิน 10MB ประเภท jpg, png, bmp, jpeg หรือ gif เท่านั้น</b-form-text>
+        <b-form-text text-variant="danger" class="m-0" v-if="check && (file1 == null ? true : false)"> กรุณาอัปโหลดรูปถ่ายเพื่อยื่นยัน</b-form-text>
       </b-form-group>
     </b-container>
-
+    <div class="my-4"></div>
     <b-container>
       <b-img
         src="~/assets/images/show_id_card2_re.png"
         fluid-grow
-        class="my-5"
+        class=""
       ></b-img>
+      <div class="my-4"></div>
       <b-form-group
         label="รูปภาพบัตรประชาชน/พาสปอร์ต:"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
       >
-        <b-form-file v-model="file2" id="file-small" size="sm"></b-form-file>
-        <small
-          >*ขนาดไม่เกิน 10MB ประเภท jpg, png, bmp, jpeg หรือ gif เท่านั้น</small
-        >
+        <b-form-file v-model="file2"  size="sm"></b-form-file>
+        <b-form-text text-variant="primary" class="m-0">* ขนาดไม่เกิน 10MB ประเภท jpg, png, bmp, jpeg หรือ gif เท่านั้น</b-form-text>
+        <b-form-text text-variant="danger" class="m-0" v-if="check && (file2 == null ? true : false)"> กรุณาอัปโหลดรูปถ่ายเพื่อยื่นยัน</b-form-text>
       </b-form-group>
     </b-container>
     <b-container>
@@ -87,21 +88,17 @@
         label="FATCA"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
       >
-        <small class="text-dark"
-          >ตามข้อกำหนดในการปฏิบัติตามกฎหมายว่าด้วยภาษีบัญชีต่างประเทศ (FATCA)
-          บริษัทสตางค์ต้องการให้คุณรองรับข้อมูลดังต่อไปนี้ (ข้อมูลเพิ่มเติม
-          <a href="https://www.irs.gov">www.irs.gov</a>)</small
-        >
-      </b-form-group></b-container
-    >
+        <b-form-text text-variant="dark" class="m-0">ตามข้อกำหนดในการปฏิบัติตามกฎหมายว่าด้วยภาษีบัญชีต่างประเทศ (FATCA)
+          บริษัท wealthy-ex ต้องการให้คุณรองรับข้อมูลดังต่อไปนี้ (ข้อมูลเพิ่มเติม <a href="https://www.irs.gov">www.irs.gov</a>)</b-form-text>
+      </b-form-group></b-container>
     <b-container>
       <b-form-group
         label="คุณเป็นพลเมืองของอเมริกาหรือไม่?"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
         v-slot="{ ariaDescribedby }"
       >
         <b-form-radio-group
@@ -110,6 +107,7 @@
           :aria-describedby="ariaDescribedby"
           size="sm"
         ></b-form-radio-group>
+          <b-form-text text-variant="danger" class="m-0" v-if="check && (selected2 == null ? true : false)"> กรุณาเลือกใช่หรือไม่ใช่</b-form-text>
       </b-form-group>
     </b-container>
     <b-container>
@@ -117,7 +115,7 @@
         label="คุณเป็นผู้มีถิ่นที่อยู่ในอเมริกาเพื่อการเสียภาษีหรือไม่?"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
         v-slot="{ ariaDescribedby }"
       >
         <b-form-radio-group
@@ -126,6 +124,7 @@
           :aria-describedby="ariaDescribedby"
           size="sm"
         ></b-form-radio-group>
+          <b-form-text text-variant="danger" class="m-0" v-if="check && (selected3 == null ? true : false)"> กรุณาเลือกใช่หรือไม่ใช่</b-form-text>
       </b-form-group>
     </b-container>
     <b-container>
@@ -133,20 +132,21 @@
         label="ข้อตกลงและเงื่อนไข"
         label-cols-sm="4"
         label-size="sm"
-        variants="primary"
+        class="text-dark"
       >
         <b-form-checkbox
           id="checkbox-1"
-          v-model="status"
+          v-model="condition"
           name="checkbox-1"
-          value="accepted"
-          unchecked-value="not_accepted"
+          value="Y"
+          unchecked-value="N"
         >
-          <small>ฉันยอมรับ <a href="#"> ข้อกำหนดในการให้บริการ</a></small>
-        </b-form-checkbox>
+          <b-form-text text-variant="primary" class="m-0">ฉันยอมรับ <a href="#"> ข้อกำหนดในการให้บริการ</a></b-form-text>
+          <b-form-text text-variant="danger" class="m-0" v-if="check && (condition == 'N' ? true : false)">ฉันยังไม่ได้ยอมรับเงือนไข</b-form-text>
+         </b-form-checkbox>
       </b-form-group>
     </b-container>
-    <b-container fluid class="p-0 mt-5">
+    <b-container fluid class="p-0 my-5">
       <b-row class="mb-4">
         <b-col class="">
           <b-button
@@ -202,6 +202,16 @@ export default {
         { text: "ใช่", value: "Y" },
         { text: "ไม่ใช่", value: "N" },
       ],
+      condition:"N",
+      check: false
+    }
+  },
+  computed:{
+    isPassport(){
+       const passport = this.id_card.length == 13 && this.code_card.length == 12 &&
+                        this.file1 != null && this.file2 != null && this.condition == "Y" &&
+                        this.selected2 != null && this.selected3 != null 
+      return passport
     }
   },
   methods: {
@@ -211,7 +221,13 @@ export default {
     },
     confirmStep4(e) {
       e.preventDefault()
+      this.check = true
+      if(this.isPassport){
       this.$emit("dataStep4", this.form)
+      console.log("Profile step4 pass......!!!")
+      }  else {
+        console.log("Profile step4 wrong!!!")
+      }
     },
   },
 }

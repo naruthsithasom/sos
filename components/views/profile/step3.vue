@@ -8,23 +8,17 @@
       <b-icon icon="camera" font-scale="2"></b-icon>
       <b-icon icon="file-earmark-person" font-scale="2"></b-icon>
     </div>
-    <b-input-group prepend="ที่อยู่ตามบัตรประชาชน" size="sm" class="mt-5 mb-2">
+    <b-input-group prepend="ที่อยู่ตามบัตรประชาชน" size="sm" class="mt-5">
       <b-input
-        v-model.trim="address"
+        v-model.trim="no"
         size="sm"
         class="border border-1"
       ></b-input>
     </b-input-group>
-    <div class="">
-      <small>กรุณาระบุรายละเอียดของที่อยู่ให้ตรงตามบัตรประชาชนทุกประการ</small>
-    </div>
-    <b-input-group prepend="แขวง/ตำบล" size="sm" class="my-5">
-      <!-- <b-form-select
-        v-model="district"
-        :options="options3"
-        size="sm"
-        class=""
-      ></b-form-select> -->
+    <b-form-text text-variant="primary" class="m-0">* กรุณาระบุรายละเอียดของที่อยู่ให้ตรงตามบัตรประชาชนทุกประการ</b-form-text>
+    <b-form-text text-variant="danger" class="m-0" v-if="check && (no == '' ? true : false)"> กรุณากรอกหมายเลขบัตรประชาชนให้ถูกต้อง </b-form-text>
+    <div class="my-4"></div>
+    <b-input-group prepend="แขวง/ตำบล" size="sm" class="">
       <b-input
         v-model.trim="district"
         size="sm"
@@ -32,13 +26,9 @@
         type="text"
       ></b-input>
     </b-input-group>
-    <b-input-group prepend="เขต/อำเภอ" size="sm" class="my-5">
-      <!-- <b-form-select
-        v-model="county"
-        :options="options2"
-        size="sm"
-        class=""
-      ></b-form-select> -->
+    <b-form-text text-variant="danger" v-if="check && (district == '') ? true : false"> กรุณาระบุ แขวง/ตำบล </b-form-text>
+    <div class="my-4"></div>
+    <b-input-group prepend="เขต/อำเภอ" size="sm" class="">
       <b-input
         v-model.trim="county"
         size="sm"
@@ -46,13 +36,9 @@
         type="text"
       ></b-input>
     </b-input-group>
-    <b-input-group prepend="จังหวัด" size="sm" class="my-5">
-      <!-- <b-form-select
-        v-model="province"
-        :options="options1"
-        size="sm"
-        class=""
-      ></b-form-select> -->
+    <b-form-text text-variant="danger" v-if="check && (county == '' ? true : false)">กรุณาระบุ เขต/อำเภอ </b-form-text>
+    <div class="my-4"></div>
+    <b-input-group prepend="จังหวัด" size="sm" class="">
       <b-input
         v-model.trim="province"
         size="sm"
@@ -60,7 +46,9 @@
         type="text"
       ></b-input>
     </b-input-group>
-    <b-input-group prepend="รหัสไปรษณีย์" size="sm" class="my-5">
+    <b-form-text text-variant="danger" v-if="check && (province == '' ? true : false)">กรุณาระบุ จังหวัด  </b-form-text>
+    <div class="my-4"></div>
+    <b-input-group prepend="รหัสไปรษณีย์" size="sm" class="">
       <b-input
         v-model.trim="code"
         size="sm"
@@ -69,7 +57,8 @@
         maxlength="4"
       ></b-input>
     </b-input-group>
-    <b-container fluid class="p-0">
+    <b-form-text text-variant="danger" v-if="check && (code == '' ? true : false)">  กรุณาระบุ รหัสไปรษณีย์ </b-form-text>
+    <b-container fluid class="p-0 my-5">
       <b-row class="mb-4">
         <b-col class="">
           <b-button
@@ -100,29 +89,24 @@
 export default {
   data() {
     return {
-      selected: null,
-      address: "",
+      no: "",
       province: "",
       county: "",
       district: "",
       code: "",
-      options1: [
-        { value: null, text: "ไทย" },
-        { value: "a", text: "Foreigner" },
-      ],
-      options2: [
-        { value: "M", text: "ชาย" },
-        { value: "F", text: "หญิง" },
-      ],
-      options3: [
-        { value: "M", text: "ชาย" },
-        { value: "F", text: "หญิง" },
-      ],
 
       status: {
         step: "step3",
       },
-      form: {},
+
+      data: {},
+      check: false,
+    }
+  },
+  computed:{
+    isPassport(){
+      const passport = this.no != "" && this.province != "" && this.county != "" && this.district != "" && this.code != ""
+      return passport
     }
   },
   methods: {
@@ -132,7 +116,13 @@ export default {
     },
     confirmStep3(e) {
       e.preventDefault()
-      this.$emit("dataStep3", this.form)
+      this.check = true
+      this.data.address = `${this.no} ${this.province} ${this.county} ${this.district} ${this.code}`
+      if(this.isPassport){
+        this.$emit("dataStep3", this.data)
+      } else {
+        console.log("Profile step 3 worng!!!")
+      }
     },
   },
 }

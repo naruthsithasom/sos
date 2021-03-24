@@ -8,15 +8,16 @@
       <b-icon icon="camera" font-scale="2"></b-icon>
       <b-icon icon="file-earmark-person" font-scale="2"></b-icon>
     </div>
-    <b-input-group prepend="สัญชาติ" size="sm" class="my-5">
+    <b-input-group prepend="สัญชาติ" size="sm" class="mt-5">
       <b-form-select
-        v-model="form.national"
+        v-model="national"
         :options="options"
         size="sm"
         class=""
       ></b-form-select>
     </b-input-group>
-    <b-container fluid class="p-0">
+    <b-form-text text-variant="danger" v-if=" check && (national == null)"> กรุณาเลือกสัญชาติ </b-form-text>
+    <b-container fluid class="p-0 my-5">
       <b-row class="mb-4">
         <b-col class=""></b-col>
         <b-col class="text-right">
@@ -40,19 +41,26 @@ export default {
     return {
       selected: null,
       options: [
-        { value: null, text: "เลือก..."},
-        { value: "thai", text: "ไทย" },
+         { value: "thai", text: "ไทย" },
         { value: "foreigner", text: "Foreigner" },
       ],
-      form: {
         national: null,
-      },
+        check: false
+    }
+  },
+  computed:{
+    isPassport(){
+      return this.national != null
     }
   },
   methods: {
     confirmStep1(e) {
       e.preventDefault()
-      this.$emit("dataStep1", this.form)
+      this.check = true
+      if(this.isPassport){
+        this.$emit("dataStep1",this.national)
+      }
+      console.log("Profile step 1 wrong!!")
     },
   },
 }

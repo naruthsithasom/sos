@@ -19,9 +19,8 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <span class="nav-menu-logo">
               <img
-                class="toggle-img"
-                src="~/assets/images/logo.png"
-                width="150px"
+                class="toggle-img logo-resize"
+                src="~/assets/images/wgc.png"
               />
             </span>
             <span class="nav-menu-lg">
@@ -105,4 +104,7 @@ export default {
 }
 </script>
  <style>
+ .logo-resize{
+   width: 80px
+ }
 </style>

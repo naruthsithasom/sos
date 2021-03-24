@@ -73,11 +73,12 @@ export default {
   },
   data() {
     return {
-      showStep1: true,
+      showStep1: false,
       showStep2: false,
       showStep3: false,
-      showStep4: false,
+      showStep4: true,
       showStep5: false,
+      form:{},
     }
   },
   methods: {
@@ -137,17 +138,18 @@ export default {
     ConfirmStep1(data) {
       const step = "1"
       this.next(step)
-      console.log("Profile step1>>", JSON.stringify(data))
+      this.form.national = data
+      console.log("Profile step1>>", JSON.stringify(this.form))
     },
     ConfirmStep2(data) {
       const step = "2"
       this.next(step)
-      console.log("Profile step2>>", JSON.stringify(data))
+      console.log("Profile step2>>", data)
     },
     ConfirmStep3(data) {
       const step = "3"
       this.next(step)
-      console.log("Profile Step3>>", JSON.stringify(data))
+      console.log("Profile Step3>>", data)
     },
     ConfirmStep4(data) {
       const step = "4"
