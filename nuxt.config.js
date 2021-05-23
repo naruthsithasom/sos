@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "sos",
+    title: "temsib",
     htmlAttrs: {
       lang: "en",
     },
@@ -11,7 +11,7 @@ export default {
       { hid: "description", name: "description", content: "" },
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "icon", type: "image/x-icon", href: "/ten10.png" },
       {
         rel: "stylesheet",
         href:
@@ -62,51 +62,57 @@ export default {
   },
   css: [
     "bootstrap-vue/dist/bootstrap-vue.css",
-     "~/assets/css/style.css",
+    "~/assets/css/style.css",
     // "~/assets/css/new-style.css",
     "~/assets/css/animate.css",
   ],
-
-  plugins: [{ src: "~plugins/bootstrap-vue.js" ,mode:"client"},],
 
   components: true,
 
   buildModules: [],
 
-  modules: ["bootstrap-vue/nuxt", "@nuxtjs/axios", "@nuxtjs/auth-next"],
+  plugins: [
+    { src: "~plugins/bootstrap-vue.js", mode: "client" },
+    { src: "~/plugins/axios.js", mode: "client" },
+    // { src: '~/plugins/lightweightcharts.js', ssr: false},
+    // { src: "~/plugins/vue-toast-notification.js", mode: "client" },
+  ],
+  modules: [
+    "bootstrap-vue/nuxt",
+    "@nuxtjs/axios",
+    "@nuxtjs/auth-next",
+    "@nuxtjs/proxy",
+  ],
   bootstrapVue: {
     icons: true,
   },
+  build: {},
   axios: {
-    baseURL: "https://api.bitkub.com",
+    proxy: true,
+    //baseURL: "https://sosapi.mike.orangeworkshop.info",
   },
 
-  build: {},
+  proxy: {
+    "api/": "https://sosapi.mike.orangeworkshop.info",
+    // "/api/": {
+    //   target: "https://sosapi.mike.orangeworkshop.info",
+    //   pathRewrite: { "^/api/": "" },
+    //   changeOrigin: true,
+    // },
+  },
   auth: {
-    auth: {
-      redirect: {
-        login: "/login",
-      },
-    },
+    localStorage: false,
     strategies: {
       local: {
         endpoints: {
-          // login: {
-          //   url: "https://api/sign_in", //link sign_in
-          //   method: "post",
-          //   propertyName: "modal.name",
-          // },
-          // logut: {
-          //   url: "https://api/sign_out", //link sign_out
-          //   method: "delete",
-          // },
-          // user: {
-          //   url: "https://api/result", // result
-          //   method: "get",
-          //   propertyName: "modal",
-          // },
+          login: { url: "api/login", method: "post", propertyName: "token" },
+          logout: false,
+          user: { url: "api/me", method: "post", propertyName: "user" },
         },
       },
+    },
+    redirect: {
+      login: "/register",
     },
   },
 }

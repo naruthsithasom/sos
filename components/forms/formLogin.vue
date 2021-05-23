@@ -93,7 +93,7 @@ export default {
         solid: true,
       })
       setTimeout(() => {
-        this.$router.push("/")
+        this.$router.push("/profile")
       }, 6000)
     },
   },

@@ -1,55 +1,83 @@
 <template>
   <div>
     <client-only>
+      <!--
+      <b-navbar class="px-4 bg-head" toggleable="lg" type="dark" variant="dark">
+        <img class="toggle-img logo-resize" src="~/assets/images/ten10.jpg" />
+        <b-navbar-brand href="#">Wealtht Exchange</b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav class="ml-auto" right>
+            <b-nav-item href="#">HOME</b-nav-item>
+            <b-nav-item href="#">MARKETS</b-nav-item>
+            <b-nav-item href="#">EXCHANGE</b-nav-item>
+            <b-nav-item href="#">REGISTER</b-nav-item>
+          </b-navbar-nav>
+
+          
+          <b-navbar-nav class="">
+            <b-nav-form>
+         
+            </b-nav-form>
+
+         
+
+            <b-nav-item-dropdown right>
+         
+              <template #button-content>
+              
+                <b-avatar variant="primary" text="BV"></b-avatar>
+             
+              </template>
+              <b-dropdown-item href="#">Profile</b-dropdown-item>
+              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+            </b-nav-item-dropdown>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar> -->
       <NavbarChild />
       <div style="height: 100vh">
-        <client-only>
-          <b-container fluid>
-            <b-row>
-              <b-col sm="12" md="2" lg="2"> </b-col>
-              <b-col sm="12" md="8" lg="8">
-                <b-row class="mt-4">
-                  <b-col sm="12" lg="12">
-                    <b-tabs content-class="pt-5  ">
-                      <b-tab title="ข้อมูลส่วนตัว" class="border-0" active>
-                        <Step1 v-if="showStep1" @dataStep1="ConfirmStep1" />
-                        <Step2
-                          v-if="showStep2"
-                          @back="before"
-                          @dataStep2="ConfirmStep2"
-                        />
-                        <Step3
-                          v-if="showStep3"
-                          @back="before"
-                          @dataStep3="ConfirmStep3"
-                        />
-                        <Step4
-                          v-if="showStep4"
-                          @back="before"
-                          @dataStep4="ConfirmStep4"
-                        />
-                        <Step5
-                          v-if="showStep5"
-                          @back="before"
-                          @dataStep5="ConfirmStep5"
-                        />
-                      </b-tab>
-                      <b-tab title="เปลี่ยนรหัสผ่าน"
-                        ><p>Change password</p></b-tab
-                      >
-                      <b-tab title="บัญชีธนาคาร"
-                        ><p>Account Bank</p></b-tab
-                      >
-                    </b-tabs>
-                  </b-col>
-                </b-row>
+           <b-container fluid>
+            <b-row class="mt-4">
+              <b-col sm="12" lg="12">
+                <b-tabs content-class="pt-5  ">
+                  <b-tab title="ข้อมูลส่วนตัว" class="border-0" active>
+                    <Step1 v-if="showStep1" @dataStep1="ConfirmStep1" />
+                    <Step2
+                      v-if="showStep2"
+                      @back="before"
+                      @dataStep2="ConfirmStep2"
+                    />
+                    <Step3
+                      v-if="showStep3"
+                      @back="before"
+                      @dataStep3="ConfirmStep3"
+                    />
+                    <Step4
+                      v-if="showStep4"
+                      @back="before"
+                      @dataStep4="ConfirmStep4"
+                    />
+                    <Step5
+                      v-if="showStep5"
+                      @back="before"
+                      @dataStep5="ConfirmStep5"
+                    />
+                  </b-tab>
+                  <b-tab title="เปลี่ยนรหัสผ่าน" class="border-0">
+                    <EditPasswordStep1 />
+                  </b-tab>
+                  <b-tab title="บัญชีธนาคาร" class="border-0">
+                    <AccountBank />
+                  </b-tab>
+                </b-tabs>
               </b-col>
-              <b-col sm="12" md="2" lg="2"> </b-col>
             </b-row>
           </b-container>
           <div class="my-5 py-5"></div>
-        </client-only>
-      </div>
+       </div>
     </client-only>
   </div>
 </template>
@@ -61,6 +89,8 @@ import Step2 from "../components/views/profile/step2"
 import Step3 from "../components/views/profile/step3"
 import Step4 from "../components/views/profile/step4"
 import Step5 from "../components/views/profile/step5"
+import EditPasswordStep1 from "../components/views/profile/editPassword/editPwdStep1"
+import AccountBank from "../components/views/profile/accountBank/account"
 export default {
   components: {
     NavbarChild,
@@ -70,6 +100,8 @@ export default {
     Step3,
     Step4,
     Step5,
+    EditPasswordStep1,
+    AccountBank,
   },
   data() {
     return {
@@ -78,7 +110,7 @@ export default {
       showStep3: false,
       showStep4: false,
       showStep5: false,
-      form:{},
+      form: {},
     }
   },
   methods: {
@@ -164,3 +196,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+.bg-head{
+  background-color: #18343a !important;
+}
+</style>

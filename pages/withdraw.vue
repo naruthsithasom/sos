@@ -44,6 +44,7 @@
 // import Navbarlogin from "../components/Navbarlogin"
 // import Footer from "../components/Footer"
 export default {
+  middleware: "auth",
   Navbarlogin,
   Footer
 }

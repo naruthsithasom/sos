@@ -12,6 +12,17 @@
                 label-class="font-weight-bold pt-0"
                 class="mb-0"
               >
+              <b-form-group
+                  label="ชื่อบัญชีผู้ใช้"
+                  label-cols-sm="4"
+                  label-align-sm="right"
+                >
+                  <b-form-input
+                    v-model.trim="form.username"
+                    class="border border-1"
+                  ></b-form-input>
+                </b-form-group>
+
                 <b-form-group
                   label="ที่อยู่อีเมล์:"
                   label-cols-sm="4"
@@ -179,6 +190,7 @@ export default {
       showRegisterStep2: false,
       isProcess: false,
       form: {
+        username: "",
         email: "",
         password: "",
         confirmPwd: "",

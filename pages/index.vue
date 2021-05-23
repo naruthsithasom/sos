@@ -33,9 +33,9 @@
           </div>
         </div>
       </div>
-
-      <!-- <ListMarkets /> -->
-
+      <div id='app'></div>
+      <ListMarkets />
+      {{btcusdt}}
       <div class="py-4 m-p-hide"></div>
       <div class="container-fluid p-0 container-mobile">
         <section class="section2">
@@ -188,8 +188,10 @@
 
 <script>
 import NavbarIndex from "../components/navbars/navbarIndex"
- import ListMarkets from "../components/tables/listMarkets"
+import ListMarkets from "../components/tables/listMarkets"
+
 export default {
+  // middleware: "auth",
   components: {
      NavbarIndex,
      ListMarkets,
@@ -210,9 +212,33 @@ export default {
 
       CURRENCY: "ETH",
       recieve: "",
+      btcusdt: 0,
     }
   },
+  mounted(){
+    // let binaceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
+    // binaceSocket.onmessage = function (event){
+    //   //console.log(event.data)
+    //   let messageObject = JSON.parse(event.data)
+    //   this.btcusdt = messageObject.E
+    //   console.log(messageObject.E)
+    // }
 
+    this.$axios.$get('https://api1.binance.com/api/v3/time').then( res => {
+      if(res){
+        console.log("v3 serverTime>>",res.serverTime)
+      }
+    }).catch( (error) => {
+      console.log('error',error)
+    })
+    this.$axios.$get('https://api1.binance.com/api/v3/exchangeInfo').then( res => {
+      if(res){
+        console.log("v3 exchangeInfo>>",res.symbols[0])
+      }
+    }).catch( (error) => {
+      console.log('error',error)
+    })
+  },
   methods: {
     ClickFavorite() {
       this.showAllMarkets = false

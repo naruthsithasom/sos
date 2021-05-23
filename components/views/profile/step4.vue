@@ -28,11 +28,9 @@
         maxlength="12"
       ></b-input>
     </b-input-group>
-    <b-input-group class="">
-    <b-form-text text-variant="primary" class="m-0">* หลักที่ 1-2 ต้องเป็นตัวหนังสือและ หลักที่ 3-12 ต้องเป็นตัวเลข</b-form-text>
+     <b-form-text text-variant="primary" class="m-0">* หลักที่ 1-2 ต้องเป็นตัวหนังสือและ หลักที่ 3-12 ต้องเป็นตัวเลข</b-form-text>
     <b-form-text text-variant="danger" class="m-0" v-if="check && (code_card.length == 12 ? false : true)"> กรุณากรอกหมายเลขบัตรประชาชนให้ถูกต้อง </b-form-text>
-    </b-input-group>
-    <div class="my-4"></div>
+     <div class="my-4"></div>
      <b-input-group>
       <b-form-checkbox-group
         v-model="checkList"

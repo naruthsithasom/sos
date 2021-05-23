@@ -2,7 +2,7 @@
   <div>
     <client-only>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light nav-border-buttom p-0"
+        class="navbar navbar-expand-lg navbar-light  nav-border-buttom p-0"
       >
         <div class="container-fluid toggle-bg p-nav">
           <button
@@ -20,24 +20,24 @@
             <span class="nav-menu-logo">
               <img
                 class="toggle-img logo-resize"
-                src="~/assets/images/wgc.png"
+                src="~/assets/images/ten10.png"
               />
             </span>
             <span class="nav-menu-lg">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 toggle-nav-link">
                 <li class="nav-item px-2">
                   <a class="nav-link toggle-text" aria-current="page" href="/"
-                    ><p>HOME</p></a
+                    ><p class="text-warning">HOME</p></a
                   >
                 </li>
                 <li class="nav-item px-2">
                   <a class="nav-link toggle-text" aria-current="page" href="/market"
-                    ><p>MARKETS</p></a
+                    ><p class="text-warning">MARKETS</p></a
                   >
                 </li>
                 <li class="nav-item px-2">
                   <a class="nav-link toggle-text" aria-current="page" href="/exchange"
-                    ><p>EXCHANGE</p></a
+                    ><p class="text-warning">EXCHANGE</p></a
                   >
                 </li>
                 <li class="nav-item px-2">
@@ -45,7 +45,7 @@
                     class="nav-link toggle-text"
                     aria-current="page"
                     href="/register"
-                    ><p>REGISTER</p></a
+                    ><p class="text-warning">REGISTER</p></a
                   >
                 </li>
                 <li class="nav-item">
@@ -62,7 +62,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    <p>WALLET</p>
+                    <p class="text-warning">WALLET</p>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/profile">Profile</a>
@@ -105,6 +105,6 @@ export default {
 </script>
  <style>
  .logo-resize{
-   width: 80px
+   width: 100px
  }
 </style>

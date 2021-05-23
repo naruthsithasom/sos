@@ -3,165 +3,22 @@
     <client-only>
       <NavbarChild />
       <div class="py-5"></div>
-      <FromRegisterNew />
-      <!-- <section class="">
-        <div class="">
-          <div class="register-text-head">
-            <div class="row mx-0">
-              <div class="col-lg-4"></div>
-              <div class="col-lg-8">REGISTER</div>
-            </div>
-          </div>
-          <div class="register-form">
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-lg-4 text-right">USER</div>
-              <div class="col-lg-8">
-                <input v-model="form.username" class="form-control" type="text" placeholder="" />
-              </div>
-            </div>
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-lg-4 text-right">PASSWORD</div>
-              <div class="col-lg-8">
-                <input v-model="form.password" class="form-control" type="password" placeholder="" />
-              </div>
-            </div>
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-lg-4 text-right">EMAIL</div>
-              <div class="col-lg-8">
-                <input v-model="form.email" class="form-control" type="email" placeholder="" />
-              </div>
-            </div>
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-lg-4 text-right">Email Verification Code</div>
-              <div class="col-lg-6">
-                <input v-model="form.code" class="form-control" type="text" placeholder="" />
-              </div>
-              <div class="col-lg-2">
-                <button @click="sendCodeEmail" type="button" class="btn btn-light w-100">Send</button>
-              </div>
-            </div>
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-lg-4  "></div>
-              <div class="col-lg-8">
-                <div class="form-check form-check-inline">
-                  <input
-                  v-model="form.check"
-                     class="form-check-input"
-                    type="checkbox"
-                    id="inlineCheckbox1"
-                    value="yes"
-                    data-toggle="modal"
-                    data-target="#exampleModalLong"
-                  />
-                  <label class="form-check-label" for="inlineCheckbox1"
-                    >I agree TheTerms and Policy</label
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="row mx-0 pb-4 register-inline">
-              <div class="col-12 col-lg-4 col-md-4"></div>
-              <div class="col-12 col-lg-4 col-md-4">
-                <button @click="submitRegister" type="button" class="btn btn-light w-100">
-                  Register
-                </button>
-              </div>
-              <div class="col-12 col-lg-4 col-md-4"></div>
-            </div>
-          </div>
-           <div
-            class="modal fade"
-            id="exampleModalLong"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLongTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">
-                    Modal title
-                  </h5>
-                  <button
-                    type="button"
-                    class="close"
-                    data-dismiss="modal"
-                    aria-label="Close"
-                  >
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo
-                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                  risus, porta ac consectetur ac, vestibulum at eros. Praesent
-                  commodo cursus magna, vel scelerisque nisl consectetur et.
-                  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                  auctor. Aenean lacinia bibendum nulla sed consectetur.
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur et. Donec sed odio dui. Donec ullamcorper nulla
-                  non metus auctor fringilla. Cras mattis consectetur purus sit
-                  amet fermentum. Cras justo odio, dapibus ac facilisis in,
-                  egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-                  vestibulum at eros. Praesent commodo cursus magna, vel
-                  scelerisque nisl consectetur et. Vivamus sagittis lacus vel
-                  augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
-                  bibendum nulla sed consectetur. Praesent commodo cursus magna,
-                  vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-                  ullamcorper nulla non metus auctor fringilla. Cras mattis
-                  consectetur purus sit amet fermentum. Cras justo odio, dapibus
-                  ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                  consectetur ac, vestibulum at eros. Praesent commodo cursus
-                  magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-                  lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean
-                  lacinia bibendum nulla sed consectetur. Praesent commodo
-                  cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                  odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-                  Cras mattis consectetur purus sit amet fermentum. Cras justo
-                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                  risus, porta ac consectetur ac, vestibulum at eros. Praesent
-                  commodo cursus magna, vel scelerisque nisl consectetur et.
-                  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-                  auctor. Aenean lacinia bibendum nulla sed consectetur.
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur et. Donec sed odio dui. Donec ullamcorper nulla
-                  non metus auctor fringilla. Cras mattis consectetur purus sit
-                  amet fermentum. Cras justo odio, dapibus ac facilisis in,
-                  egestas eget quam. Morbi leo risus, porta ac consectetur ac,
-                  vestibulum at eros. Praesent commodo cursus magna, vel
-                  scelerisque nisl consectetur et. Vivamus sagittis lacus vel
-                  augue laoreet rutrum faucibus dolor auctor. Aenean lacinia
-                  bibendum nulla sed consectetur. Praesent commodo cursus magna,
-                  vel scelerisque nisl consectetur et. Donec sed odio dui. Donec
-                  ullamcorper nulla non metus auctor fringilla. Cras mattis
-                  consectetur purus sit amet fermentum. Cras justo odio, dapibus
-                  ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-                  consectetur ac, vestibulum at eros. Praesent commodo cursus
-                  magna, vel scelerisque nisl consectetur et. Vivamus sagittis
-                  lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean
-                  lacinia bibendum nulla sed consectetur. Praesent commodo
-                  cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                  odio dui. Donec ullamcorper nulla non metus auctor fringilla.
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary"  data-dismiss="modal">
-                    OK
-                    
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      <Step1 
+      v-if="showStep1" 
+      :propsIsAdvice="propsIsAdvice"
+      :propsIsConfirm="propsIsConfirm"
+      :propsIndeterminate="propsIndeterminate"
+      :propsQueryAdvice="propsQueryAdvice"
+      @dataStep1="ConfirmStep1" 
+      @advie="checkAdvice"
+      />
+        <!-- :propEmail="propEmail"
+        :propUsername="propUsername" -->
+      <Step2
+        v-if="showStep2"
+        @dataStep2="ConfrimStep2"
+        @back="before"
+      />
       <div class="py-5"></div>
     </client-only>
   </div>
@@ -169,41 +26,196 @@
 <script>
 import NavbarChild from "../components/navbars/navbarChild"
 import FromRegisterNew from "../components/forms/formRegisterNew"
+import Step1 from "../components/views/register/RegisterStep1"
+import Step2 from "../components/views/register/RegisterStep2"
 export default {
   components: {
     NavbarChild,
     FromRegisterNew,
+    Step1,
+    Step2,
   },
   head: {
     title: "หน้าลงทะเบียน",
   },
-  data(){
-    return{
-      form:{
-        username: "",
-        password: "",
-        email: "",
-        code: "",
-        check : "",
-      }
+  data() {
+    return {
+      showStep1: true,
+      showStep2: false,
+      form: {},
+      propEmail: null,
+      propsIsAdvice: false,
+      propsIsConfirm: false,
+      propsIndeterminate: false,
+      propsQueryAdvice: '',
     }
   },
+  mounted(){
+    let data = ''
+    console.log('query params:>>',this.$route.query.advice)
+    data = this.$route.query.advice
+    if(data){this.queryRecommed(data)}
+  },
   methods: {
-     submitRegister() {
-      // const res = await this.$axios
-      //   .$get("/api/register", {
-      //     username: this.form.username,
-      //     email: this.form.email,
-      //     password: this.form.email.com,
-      //   })
-      //   .then((res) => {
-      //     console.log("resgister>>".res)
-      //   })
-      console.log("Register>>",JSON.stringify(this.form))
+    next(step) {
+      if (step === "1") {
+        this.showStep1 = false
+        this.showStep2 = true
+      }
     },
-    sendCodeEmail(){
-
-    }
+    before(data) {
+      console.log("Back>>", data)
+      if (data === 1) {
+        this.showStep1 = true
+        this.showStep2 = false
+      }
+    },
+    async queryRecommed(data){
+      await this.$axios
+          .$post(
+            'http://sosapi.mike.orangeworkshop.info/api/register',{
+                advice: data,
+                checkadvice: 'check'
+              }
+          )
+          .then((res) => {
+            if(res.status === 'Success'){
+            this.propsIsAdvice = true
+            this.propsIsConfirm = true
+            this.propsIndeterminate = true
+            this.propsQueryAdvice = data
+            console.log("res>>", res)
+            }            
+          })
+          .catch((error) => {
+            this.propsIsAdvice = false
+            this.propsIsConfirm = false
+              console.log("error>>", error)
+          })
+    },
+    async checkAdvice(data){
+      console.log('check advice>>',data)
+        await this.$axios
+          .$post(
+            'https://sosapi.mike.orangeworkshop.info/api/register',{
+                advice: data,
+                checkadvice: 'check'
+              }
+          )
+          .then((res) => {
+            if(res.status === 'Success'){
+            this.propsIsAdvice = true
+            this.propsIsConfirm = true
+            this.$toast.open({
+              message: `คุณ ${data} เป็นชื่อบัญชีผู้แนะนำ  `,
+              type: "success",
+              position: "bottom-right",
+              className: "textWhite",
+          })
+            console.log("res>>", res)
+            }            
+          })
+          .catch((error) => {
+            this.propsIsAdvice = false
+            this.propsIsConfirm = false
+              console.log("error>>", error)
+          })
+    },
+    ConfirmStep1(data) {
+      /*
+      const step = "1"
+      this.next(step)
+      this.propEmail = data.email
+      this.propUsername = data.username
+      */
+      // this.form = Object.assign({}, data)
+      this.form = {...data}
+      console.log("Register step1>>", data)
+      this.$axios
+        .$post(
+          "https://sosapi.mike.orangeworkshop.info/api/register",
+  
+          {
+            username: data.username,
+            password: data.password,
+            email: data.email,
+            advice : data.advice
+          }
+        )
+        .then((res) => {
+          if (res) {
+            const step = "1"
+            this.next(step)
+            console.log(" Register Done....")
+            
+            this.$toast.open({
+              message: `คุณ ${data.username} ได้สมาชิกกับ tensib เรียบร้อยแล้วค่ะ`,
+              type: "success",
+              position: "bottom-right",
+              className: "textWhite",
+          })
+            // this.$bvModal
+            //   .msgBoxOk("คุณได้สมัครสมาชิกเรียบร้อยแล้ว")
+            //   .then((value) => {
+            //     if (value) {
+            //       setTimeout(() => {
+            //         this.$router.push("/login")
+            //         //console.log("Res>>", res)
+            //       }, 2000)
+            //     }
+            //   })
+          }
+        })
+        .catch((error) => {
+          console.log(">>>", error)
+          // this.$toast.open({
+          //   message: `เกิดข้อผิดพลาด เนื่องจากมีบัญชีชื่อ ${this.form.username} ในระบบแล้ว`,
+          //   type: "error",
+          //   position: "bottom-right",
+          //   className: "textWhite",
+          // })
+        })
+    },
+    // async ConfrimStep2(data) {
+    //   console.log("register step2", JSON.stringify(this.form))
+    //   await this.$axios
+    //     .$post(
+    //       "https://sosapi.mike.orangeworkshop.info/api/register",
+    //       //   this.form
+    //       {
+    //         username: this.form.username,
+    //         email: this.form.email,
+    //         password: this.form.password,
+    //         advice_username: this.form["advice_username"],
+    //       }
+    //     )
+    //     .then((res) => {
+    //       if (res) {
+    //         console.log("register step2>>", res)
+    //         console.log(" Register Done....")
+    //         this.$bvModal
+    //           .msgBoxOk("คุณได้สมัครสมาชิกเรียบร้อยแล้ว")
+    //           .then((value) => {
+    //             if (value) {
+    //               setTimeout(() => {
+    //                 this.$router.push("/login")
+    //                 console.log("Res>>", res)
+    //               }, 2000)
+    //             }
+    //           })
+    //       }
+    //     })
+    //     .catch((error) => {
+    //       console.log(">>>", error)
+    //       this.$toast.open({
+    //         message: `เกิดข้อผิดพลาด เนื่องจากมีบัญชีชื่อ ${this.form.username} ในระบบแล้ว`,
+    //         type: "error",
+    //         position: "bottom-right",
+    //         className: "textWhite",
+    //       })
+    //     })
+    // },
   },
 }
 </script>
+<style></style>

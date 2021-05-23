@@ -10,7 +10,8 @@
 import NavbarChild from "../components/navbars/navbarChild"
 import ListExchange from "../components/tables/listExchange"
 export default {
-  components: {
+  middleware:"auth",
+   components: {
     NavbarChild,
     ListExchange,
   },

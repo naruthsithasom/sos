@@ -5491,7 +5491,7 @@ hr {
 
   .nav-menu-lg i,
   p {
-    color: #E7AF24;
+    /* color: #E7AF24; */
   }
 
   .wrap-section1 {
@@ -5649,7 +5649,8 @@ hr {
 
   .nav-menu-lg i,
   p {
-    color: #E7AF24;
+    /* color: #E7AF24; */
+    
   }
 
   .nav-link :hover {
@@ -5814,5 +5815,8 @@ hr {
   }
   .wrap-login{
     height: 70vh;
+  }
+  .textWhite i,p{
+    color: #ffffff !important;
   }
 }

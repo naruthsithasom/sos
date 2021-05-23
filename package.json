@@ -11,10 +11,13 @@
   "dependencies": {
     "@nuxtjs/auth-next": "5.0.0-1612791489.a5d8c28",
     "@nuxtjs/axios": "^5.12.5",
+    "@nuxtjs/proxy": "^2.1.0",
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.8.3",
-    "nuxt": "^2.14.12"
+    "lightweight-charts": "^3.3.0",
+    "nuxt": "^2.14.12",
+    "vue-toast-notification": "^0.6.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",

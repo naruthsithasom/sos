@@ -10,6 +10,7 @@
  import listMarkets from "../components/tables/listMarkets"
  import NavbarChild from "../components/navbars/navbarChild"
 export default {
+  middleware: "auth",
   components: {
     listMarkets,
     NavbarChild,

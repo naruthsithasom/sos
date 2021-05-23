@@ -49,7 +49,7 @@
               </div>
             </div>
 
-            <div v-for="fav in favorites" :key="fav" v-show="showFav">
+            <div v-for="(fav, index) in favorites" :key="`fav-${index}`" >
               <div class="row mx-0 mx-0 text-section1 wrap-section-mobile1">
                 <div class="col-md-2 col-sm-2 col-4 pr-0">
                   <span class="">
@@ -116,14 +116,11 @@
               </div>
             </div>
 
-            <div v-for="list in lists" :key="list.id" v-show="showAllMarkets">
-              <div class="row mx-0 mx-0 text-section1 wrap-section-mobile1">
+             <div v-for="list in lists" :key="list.id" v-show="showAllMarkets">
+              <!-- <div class="row mx-0 mx-0 text-section1 wrap-section-mobile1">
                 <div class="col-md-2 col-sm-2 col-4 pr-0">
                   <span class="">
-                    <img
-                      class="curren_icon"
-                      :src="require(`~/assets/images/symbol/${list.id}.png`)"
-                    />
+ 
                   </span>
                 </div>
                 <div class="col-md-2 col-sm-2 col-4">
@@ -176,8 +173,8 @@
                     {{ list.low24hr.toFixed(2) }}
                   </p>
                 </div>
-              </div>
-            </div>
+              </div> -->
+            </div> 
           </div>
         </div>
       </section>
@@ -194,22 +191,29 @@ export default {
       listFav: ["BTC", "ETH", "USDT", "XRP"],
       lists: [],
       CURRENCY: "ETH",
+      favorites:[]
     }
   },
   async mounted() {
-    await this.$axios
-      .$get(`/api/market/ticker`)
+    await this.$axios.$get(`https://api.bitkub.com/api/market/ticker`)
       .then((res) => {
         this.lists = res
         this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
-        //console.log("updated>>", res.THB_BTC.percentChange)
+        console.log("updated>>", res)
       })
       .catch(() => console.log("api error>>", error))
-    console.log("fav>>", this.lists)
+    console.log("fav>>", this.favorites)
   },
 
-  methods: {
-    ClickFavorite() {
+   methods: {
+     async ClickFavorite() {
+      await this.$axios.$get(`https://api.bitkub.com/api/market/ticker`)
+      .then((res) => {
+        this.lists = res
+        this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
+        console.log("updated api..")
+      })
+      .catch(() => console.log("api error>>", error))
       this.showAllMarkets = false
       this.showFav = true
     },
