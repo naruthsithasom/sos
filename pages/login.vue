@@ -3,7 +3,7 @@
     <client-only>
       <NavbarChild />
       <div class="py-5"></div>
-      <FormLogin />
+      <FormLogin @EmitLogin="confirmLogin"/>
       <!-- <div class="wrap-login">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content boxlogin">
@@ -120,22 +120,35 @@ export default {
     }
   },
   methods: {
-    // async confirmLogin(){
-    //   try {
-    //     const res = await this.$auth.loginWith('local',{
-    //       data: { user: { email: this.email, password: this.password }}
-    //   })
-    //   console.log('res : ', res)
-    //   if( res.data.success){
-    //     this.$route.replace({name: "exchange"})// redirect exchange.vue
-    //   }
-    //   } catch (error){
-    //     console.error('Error is  : ', error)
-    //   }
-    // }
-    confirmLogin() {
-      console.log("Login>", JSON.stringify(this.form))
+ 
+    async confirmLogin(data) {
+    let auth = null
+     let user = null
+       try {
+        const res = await this.$auth.loginWith('local',{
+             data: {
+                //pipat.pimnont@gmail.com
+                  email: data.email,
+                  password: data.password
+              }
+      })
+   
+      if(res.status == 200){
+        this.$toast.open({ message: `คุณ ${data.email} เข้าสู่ระบบ`, type: "success", position: "bottom-right", className: "textWhite",})
+      }
+      localStorage.setItem('access_token',res.data.access_token)
+        localStorage.setItem('user',JSON.stringify(res.data.user))
+        auth = localStorage.getItem('user') 
+        user = JSON.parse(auth)
+        console.log('User::',user)
+         setTimeout(() => {this.$router.push("/profile")}, 3000)
+      } catch (error){
+        console.error('Error is  : ', error)
+        // this.$toast.open({ message: `คุณ ${data.email} ไม่สามารถเข้าสู่ระบบ`, type: "error", position: "bottom-right", className: "textWhite",})
+         setTimeout(() => {this.$router.push("/login")}, 3000)
+      }
     },
+ 
   },
   /* validate
   computed: {

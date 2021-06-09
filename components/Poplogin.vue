@@ -31,7 +31,7 @@
             </label>
             <div class="col-7">
               <input
-                v-model="email"
+                v-model.trim="form.email"
                 type="text"
                 class="form-control"
                 id="inputPassword"
@@ -46,7 +46,7 @@
             </label>
             <div class="col-7">
               <input
-                v-model="password"
+                v-model.trim="form.password"
                 type="password"
                 class="form-control"
                 id="inputPassword"
@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="text-center">
-          <button type="button" class="btn btn-login" data-dismiss="modal">
+          <button @click="confirmLogin" type="button" class="btn btn-login" data-dismiss="modal">
             Login
           </button>
         </div>
@@ -96,15 +96,21 @@
 export default {
   data() {
     return {
-      email: "",
-      password: "",
+      form:{
+        email: "",
+        password: "",
+      },
     }
   },
   methods: {
     async confirmLogin() {
+      console.log('popup Login>>',this.form)
       try {
         const res = await this.$auth.loginWith("local", {
-          data: { user: { email: this.email, password: this.password } },
+          data: { 
+            email: this.form.email,
+            password: this.form.password
+           },
         })
         console.log("res : ", res)
       } catch (error) {

@@ -20,7 +20,7 @@
             <span class="nav-menu-logo">
               <img
                 class="toggle-img logo-resize"
-                src="~/assets/images/ten10.png"
+                src="~/assets/images/ten10_02.png"
               />
             </span>
             <span class="nav-menu-lg">
@@ -71,7 +71,7 @@
                     <a class="dropdown-item" href="#">Withdraw</a>
                     <a class="dropdown-item" href="#">Transition History</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-danger" href="#">Logout</a>
+                    <a class="dropdown-item text-danger" @click="Logout">Logout</a>
                   </div>
                 </li>
               </ul>
@@ -100,6 +100,10 @@ export default {
     handleOk() {
       console.log("Login>>", JSON.stringify(this.form))
     },
+    Logout(){
+       localStorage.clear();
+    setTimeout(()=>{this.$router.push("/")},2000)
+    }
   },
 }
 </script>

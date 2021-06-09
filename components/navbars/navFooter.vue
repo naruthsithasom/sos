@@ -5,7 +5,7 @@
           <p class="text-white">2020 SOSNATION All Right Reserved</p>
         </div>
         <div class="col-4 text-center h-box4 p-0 m-0">
-          <img src="~/assets/images/logo_f-01.png" alt="" />
+          <img src="~/assets/images/ten10_02.png" width="100" alt="" />
         </div>
         <div class="col-4 text-center h-box4 p-0 m-0">
           <ul class="nav justify-content-end">

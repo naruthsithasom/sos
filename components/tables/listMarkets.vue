@@ -201,7 +201,7 @@ export default {
         this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
         console.log("updated>>", res)
       })
-      .catch(() => console.log("api error>>", error))
+      .catch((error) => console.log("api error>>", error))
     console.log("fav>>", this.favorites)
   },
 
@@ -213,7 +213,7 @@ export default {
         this.favorites = [res.THB_BTC, res.THB_ETH, res.THB_USDT, res.THB_XRP]
         console.log("updated api..")
       })
-      .catch(() => console.log("api error>>", error))
+      .catch((error) => console.log("api error>>", error))
       this.showAllMarkets = false
       this.showFav = true
     },

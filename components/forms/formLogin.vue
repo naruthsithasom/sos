@@ -18,7 +18,7 @@
                   label-align-sm="right"
                 >
                   <b-form-input
-                    v-model="form.email"
+                    v-model.trim="form.email"
                     class="border border-1"
                   ></b-form-input>
                 </b-form-group>
@@ -29,7 +29,7 @@
                   label-align-sm="right"
                 >
                   <b-form-input
-                    v-model="form.password"
+                    v-model.trim="form.password"
                     class="border border-1"
                     type="password"
                   ></b-form-input>
@@ -84,17 +84,9 @@ export default {
   },
   methods: {
     handleLogin() {
-      this.showLogin = false
-      this.isProcess = true
-      console.log("test handleok", JSON.stringify(this.form))
-      this.$bvToast.toast("Toast body content", {
-        title: `ยินดีต้อนรับคุณ  ${this.form.email} `,
-        variant: "success",
-        solid: true,
-      })
-      setTimeout(() => {
-        this.$router.push("/profile")
-      }, 6000)
+      //this.showLogin = false
+      //this.isProcess = true
+      this.$emit('EmitLogin',this.form)
     },
   },
 }

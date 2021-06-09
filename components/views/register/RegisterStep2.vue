@@ -84,7 +84,7 @@ export default {
     }
   },
   mounted() {
-    this.linkRecommend = "http://temsib.co/?advice=" + this.propUsername
+    this.linkRecommend = "https://temsib.co/register?advice=" + this.propUsername
   },
   methods: {
     confirmStep2(e) {

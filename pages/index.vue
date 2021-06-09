@@ -1,7 +1,7 @@
 <template>
   <div>
     <client-only>
-      <NavbarIndex/>
+      <NavbarIndex @EmitLogin="ClickBtnLogin"/>
       <div class="container-fluid p-0 container-mobile">
         <div class="py-5 bg-text1">
           <div class="row wrap-text1">
@@ -182,6 +182,8 @@
           </div>
         </section>
       </div>
+
+      <NavFooter />
     </client-only>
   </div>
 </template>
@@ -189,12 +191,13 @@
 <script>
 import NavbarIndex from "../components/navbars/navbarIndex"
 import ListMarkets from "../components/tables/listMarkets"
-
+import NavFooter from "../components/navbars/navFooter"
 export default {
   // middleware: "auth",
   components: {
      NavbarIndex,
      ListMarkets,
+     NavFooter,
 
   },
     head:{
@@ -213,9 +216,10 @@ export default {
       CURRENCY: "ETH",
       recieve: "",
       btcusdt: 0,
+      User:{},
     }
   },
-  mounted(){
+  async mounted(){
     // let binaceSocket = new WebSocket("wss://stream.binance.com:9443/ws/btcusdt@trade")
     // binaceSocket.onmessage = function (event){
     //   //console.log(event.data)
@@ -223,21 +227,26 @@ export default {
     //   this.btcusdt = messageObject.E
     //   console.log(messageObject.E)
     // }
+    let auth = localStorage.getItem('user') 
+    let user = JSON.parse(auth)
+    this.User = {...user}
+    console.log('this user',this.User)
 
-    this.$axios.$get('https://api1.binance.com/api/v3/time').then( res => {
-      if(res){
-        console.log("v3 serverTime>>",res.serverTime)
-      }
-    }).catch( (error) => {
-      console.log('error',error)
-    })
-    this.$axios.$get('https://api1.binance.com/api/v3/exchangeInfo').then( res => {
-      if(res){
-        console.log("v3 exchangeInfo>>",res.symbols[0])
-      }
-    }).catch( (error) => {
-      console.log('error',error)
-    })
+    // await this.$axios.$get('https://api1.binance.com/api/v3/time').then( res => {
+    //   if(res){
+    //     console.log("v3 serverTime>>",res.serverTime)
+    //   }
+    // }).catch( (error) => {
+    //   console.log('error',error)
+    // })
+    // await this.$axios.$get('https://api1.binance.com/api/v3/exchangeInfo').then( res => {
+    //   if(res){
+    //     console.log("v3 exchangeInfo>>",res.symbols[0])
+    //   }
+    // }).catch( (error) => {
+    //   console.log('error',error)
+    // })
+    
   },
   methods: {
     ClickFavorite() {
@@ -248,6 +257,36 @@ export default {
       this.showFav = false
       this.showAllMarkets = true
     },
+    async ClickBtnLogin(data){
+     // console.log('form emit>>',data)
+     let auth = null
+     let user = null
+      try {
+        const res = await this.$auth.loginWith('local',{
+          data: {
+            //pipat.pimnont@gmail.com
+            email: data.email,
+            password: data.password
+          }
+      })
+    
+      if(res.status == 200){
+        this.$toast.open({ message: `คุณ ${data.email} เข้าสู่ระบบ`, type: "success", position: "bottom-right", className: "textWhite",})
+      }
+
+        localStorage.setItem('access_token',res.data.access_token)
+        localStorage.setItem('user',JSON.stringify(res.data.user))
+        auth = localStorage.getItem('user') 
+        user = JSON.parse(auth)
+        console.log('User::',user)
+         setTimeout(() => {this.$router.push("/profile")}, 3000)
+      } catch (error){
+        console.log('Error is  : ', error)
+        setTimeout(() => {this.$router.push("/")}, 3000)
+      }
+        
+      return this.User = user
+    }
   },
 }
 </script>

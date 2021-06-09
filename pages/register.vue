@@ -52,7 +52,7 @@ export default {
   },
   mounted(){
     let data = ''
-    console.log('query params:>>',this.$route.query.advice)
+    //console.log('query params:>>',this.$route.query.advice)
     data = this.$route.query.advice
     if(data){this.queryRecommed(data)}
   },
@@ -64,7 +64,7 @@ export default {
       }
     },
     before(data) {
-      console.log("Back>>", data)
+      //console.log("Back>>", data)
       if (data === 1) {
         this.showStep1 = true
         this.showStep2 = false
@@ -73,18 +73,19 @@ export default {
     async queryRecommed(data){
       await this.$axios
           .$post(
-            'http://sosapi.mike.orangeworkshop.info/api/register',{
+            'https://mike.orangeworkshop.info/temsib/api/register',{
                 advice: data,
                 checkadvice: 'check'
               }
           )
           .then((res) => {
-            if(res.status === 'Success'){
+            // if(res.status === 'Success'){
+            if(res){
             this.propsIsAdvice = true
             this.propsIsConfirm = true
             this.propsIndeterminate = true
             this.propsQueryAdvice = data
-            console.log("res>>", res)
+            //console.log("res>>", res)
             }            
           })
           .catch((error) => {
@@ -94,16 +95,17 @@ export default {
           })
     },
     async checkAdvice(data){
-      console.log('check advice>>',data)
+      //console.log('check advice>>',data)
         await this.$axios
           .$post(
-            'https://sosapi.mike.orangeworkshop.info/api/register',{
+            'https://mike.orangeworkshop.info/temsib/api/register',{
                 advice: data,
                 checkadvice: 'check'
               }
           )
           .then((res) => {
-            if(res.status === 'Success'){
+            // if(res.status === 'Success'){
+            if(res){
             this.propsIsAdvice = true
             this.propsIsConfirm = true
             this.$toast.open({
@@ -112,7 +114,7 @@ export default {
               position: "bottom-right",
               className: "textWhite",
           })
-            console.log("res>>", res)
+            //console.log("res>>", res)
             }            
           })
           .catch((error) => {
@@ -130,16 +132,16 @@ export default {
       */
       // this.form = Object.assign({}, data)
       this.form = {...data}
-      console.log("Register step1>>", data)
+      //console.log("Register step1>>", data)
       this.$axios
         .$post(
-          "https://sosapi.mike.orangeworkshop.info/api/register",
+          "https://mike.orangeworkshop.info/temsib/api/register",
   
           {
-            username: data.username,
-            password: data.password,
-            email: data.email,
-            advice : data.advice
+            username: this.form.username,
+            password: this.form.password,
+            email: this.form.email,
+            advice : this.form.advice
           }
         )
         .then((res) => {
@@ -149,7 +151,7 @@ export default {
             console.log(" Register Done....")
             
             this.$toast.open({
-              message: `คุณ ${data.username} ได้สมาชิกกับ tensib เรียบร้อยแล้วค่ะ`,
+              message: `คุณ ${data.username} ได้สมาชิกกับ temsib เรียบร้อยแล้วค่ะ`,
               type: "success",
               position: "bottom-right",
               className: "textWhite",

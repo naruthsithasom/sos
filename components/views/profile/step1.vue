@@ -1,6 +1,9 @@
 <template>
   <b-container cols="12">
-    <h4>ยืนยันตัวตน</h4>
+    <div class="d-flex justify-content-between mb-5">
+    <h4 >Confirm Profile</h4>
+    <span class="text-primary">บัญชีผู้ใช้ : {{User.username}}</span>
+    </div>
     <div class="d-flex justify-content-around">
       <b-icon icon="person-fill" font-scale="2"></b-icon>
       <b-icon icon="file-richtext" font-scale="2"></b-icon>
@@ -37,6 +40,9 @@
 </template>
 <script>
 export default {
+  props:{
+    prposUser: Object,
+  },
   data() {
     return {
       selected: null,
@@ -45,8 +51,14 @@ export default {
         { value: "foreigner", text: "Foreigner" },
       ],
         national: null,
-        check: false
+        check: false,
+        User:{}
     }
+  },
+  mounted(){
+    this.User = this.prposUser
+    console.log('User step1',this.User)
+    return this.User
   },
   computed:{
     isPassport(){
@@ -58,9 +70,10 @@ export default {
       e.preventDefault()
       this.check = true
       if(this.isPassport){
-        this.$emit("dataStep1",this.national)
+        this.$emit("EmitdataStep1",this.national)
+      } else {
+        console.log("Profile step 1 wrong!!")
       }
-      console.log("Profile step 1 wrong!!")
     },
   },
 }

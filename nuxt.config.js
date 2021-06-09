@@ -58,7 +58,7 @@ export default {
   ssr: false,
   target: "static",
   server: {
-    port: 80,
+    port: 8000,
   },
   css: [
     "bootstrap-vue/dist/bootstrap-vue.css",
@@ -76,43 +76,42 @@ export default {
     { src: "~/plugins/axios.js", mode: "client" },
     // { src: '~/plugins/lightweightcharts.js', ssr: false},
     // { src: "~/plugins/vue-toast-notification.js", mode: "client" },
+    { src:"~/plugins/axios.client.js", mode: "client"},
   ],
   modules: [
     "bootstrap-vue/nuxt",
     "@nuxtjs/axios",
     "@nuxtjs/auth-next",
-    "@nuxtjs/proxy",
+     "@nuxtjs/proxy",
   ],
   bootstrapVue: {
     icons: true,
   },
   build: {},
   axios: {
-    proxy: true,
-    //baseURL: "https://sosapi.mike.orangeworkshop.info",
-  },
+     //proxy: true,
+   baseURL:'https://mike.orangeworkshop.info/temsib'
+   },
 
-  proxy: {
-    "api/": "https://sosapi.mike.orangeworkshop.info",
-    // "/api/": {
-    //   target: "https://sosapi.mike.orangeworkshop.info",
-    //   pathRewrite: { "^/api/": "" },
-    //   changeOrigin: true,
-    // },
+   proxy: {
+     "/api/": "http://mike.orangeworkshop.info/temsib",
   },
   auth: {
-    localStorage: false,
+     localStorage: false,
     strategies: {
       local: {
         endpoints: {
-          login: { url: "api/login", method: "post", propertyName: "token" },
+          // login: { url: "/api/v1/auth/login", method: "post", propertyName: "access_token" },
+          login: { url: "/api/v1/auth/login", method: "post", propertyName: "access_token" },
+          user: { url: "/api/v1/auth/me", method: "post", propertyName: "user" },
           logout: false,
-          user: { url: "api/me", method: "post", propertyName: "user" },
+      // logout: { url: "/api/logout", method: "post" },
         },
       },
     },
     redirect: {
-      login: "/register",
+      login: "/login",
     },
+    tokenName: "auth-token"
   },
 }

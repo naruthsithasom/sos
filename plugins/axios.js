@@ -14,7 +14,8 @@ export default function ({ $axios, redirect }) {
     //     // all of other options may go here
     //   })
     // }
-    if (error.response.status == 500) {
+    // if (error.response.status == 500) {
+    if (error) {
       let err = error.response
       Vue.$toast.open({
         message: `เกิดข้อผิดพลาด! ${JSON.stringify(err.data.message)}`,

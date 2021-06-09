@@ -1,54 +1,22 @@
 <template>
-  <div>
+  <div v-if="Display">
     <client-only>
-      <!--
-      <b-navbar class="px-4 bg-head" toggleable="lg" type="dark" variant="dark">
-        <img class="toggle-img logo-resize" src="~/assets/images/ten10.jpg" />
-        <b-navbar-brand href="#">Wealtht Exchange</b-navbar-brand>
-
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto" right>
-            <b-nav-item href="#">HOME</b-nav-item>
-            <b-nav-item href="#">MARKETS</b-nav-item>
-            <b-nav-item href="#">EXCHANGE</b-nav-item>
-            <b-nav-item href="#">REGISTER</b-nav-item>
-          </b-navbar-nav>
-
-          
-          <b-navbar-nav class="">
-            <b-nav-form>
-         
-            </b-nav-form>
-
-         
-
-            <b-nav-item-dropdown right>
-         
-              <template #button-content>
-              
-                <b-avatar variant="primary" text="BV"></b-avatar>
-             
-              </template>
-              <b-dropdown-item href="#">Profile</b-dropdown-item>
-              <b-dropdown-item href="#">Sign Out</b-dropdown-item>
-            </b-nav-item-dropdown>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-navbar> -->
       <NavbarChild />
       <div style="height: 100vh">
            <b-container fluid>
             <b-row class="mt-4">
               <b-col sm="12" lg="12">
                 <b-tabs content-class="pt-5  ">
-                  <b-tab title="ข้อมูลส่วนตัว" class="border-0" active>
-                    <Step1 v-if="showStep1" @dataStep1="ConfirmStep1" />
+                  <b-tab title="ข้อมูลส่วนตัว" class="border-0" active> 
+                    <!-- <div class="ml-5 mb-5 text-primary"><h3>บัญชีผู้ใช้ {{User.username}}</h3></div> -->
+                    <Step1 v-if="showStep1" 
+                    @EmitdataStep1="ConfirmStep1"  
+                    :prposUser="User"/>
                     <Step2
                       v-if="showStep2"
                       @back="before"
                       @dataStep2="ConfirmStep2"
+                     
                     />
                     <Step3
                       v-if="showStep3"
@@ -76,7 +44,7 @@
               </b-col>
             </b-row>
           </b-container>
-          <div class="my-5 py-5"></div>
+           <div class="my-5 py-5"></div>
        </div>
     </client-only>
   </div>
@@ -92,6 +60,7 @@ import Step5 from "../components/views/profile/step5"
 import EditPasswordStep1 from "../components/views/profile/editPassword/editPwdStep1"
 import AccountBank from "../components/views/profile/accountBank/account"
 export default {
+ //middleware: "auth",
   components: {
     NavbarChild,
     ViewProfile,
@@ -105,15 +74,46 @@ export default {
   },
   data() {
     return {
+      Display: false,
       showStep1: true,
       showStep2: false,
       showStep3: false,
       showStep4: false,
       showStep5: false,
       form: {},
+      auth: {},
+      User:{}
     }
   },
+  async created(){
+  
+  },
+  mounted(){
+   // console.log('user auth',this.$auth)
+    // this.auth = {...this.$auth}
+  this.getData()
+  },
   methods: {
+    async getData(){
+       //pipat.pimnont@gmail.com
+        let token = localStorage.getItem('access_token') 
+        console.log('access_token:',token)
+         //  let res = await this.$axios.post('https://mike.orangeworkshop.info/temsib/api/v1/auth/user/profile',{
+         //    headers: {'Authorization':`Bearer ${token} `}
+         //  })
+       let res = await this.$axios.post('https://mike.orangeworkshop.info/temsib/api/v1/auth/user/profile')
+
+        if(res.data.status.code == 403){
+          this.$router.push('/')
+          console.log('Auth>>',res.data.status.code)
+
+        } else {
+          this.Display = true
+
+          this.User = {...res.data}
+          console.log('Auth>>',this.User)
+        }
+    },
     before(status) {
       if (status.step === "step2") {
         this.showStep1 = true
@@ -167,11 +167,16 @@ export default {
         })
       }
     },
-    ConfirmStep1(data) {
+    async ConfirmStep1(data) {
       const step = "1"
-      this.next(step)
       this.form.national = data
-      console.log("Profile step1>>", JSON.stringify(this.form))
+      console.log("Profile step1>>", data)
+      await this.$axios.$post('https://mike.orangeworkshop.info/temsib/api/v1/auth/user/profile/step1',{
+        national: data
+      }).then( res => {
+        this.next(step)
+        console.log('step1',res)
+      }).catch((error) => console.log('profile/step1 feild!!>>',error))
     },
     ConfirmStep2(data) {
       const step = "2"

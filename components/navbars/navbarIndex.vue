@@ -18,11 +18,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <span class="nav-menu-logo">
+          <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo03">
+            <span class="nav-menu-logo ">
               <img
                 class="toggle-img logo-resize"
-                src="~/assets/images/ten10.png"
+                src="~/assets/images/ten10_02.png"
               />
             </span>
             <span class="nav-menu-lg">
@@ -61,8 +61,7 @@
                     v-b-modal.modal-center
                     class="nav-link toggle-text"
                     aria-current="page"
-                    href="#"
-                  >
+                   >
                     <!-- <b-avatar variant="primary" text="BV"></b-avatar> -->
                     <i class="fa fa-user cl-g" aria-hidden="true"></i>
                   </a>
@@ -81,7 +80,7 @@
                     </b-col>
                     <b-col sm="10">
                       <b-form-input
-                        v-model="form.username"
+                        v-model="form.email"
                         size="sm"
                         placeholder=""
                       ></b-form-input>
@@ -105,7 +104,7 @@
                     <b-col sm="5">
                       <b-form-checkbox
                         id="checkbox-1"
-                        v-model="form.readme"
+                        v-model="readme"
                         value="yes"
                         unchecked-value="not_accepted"
                       >
@@ -131,17 +130,41 @@ export default {
   data() {
     return {
       form: {
-        username: "",
-        password: "",
-        readme: "no",
+        email:"",
+         password: "",
       },
+        readme: "no",
     }
   },
-  async mounted() {},
-  watch: {},
+ 
   methods: {
-    handleOk() {
-      console.log("Login>>", JSON.stringify(this.form))
+    async handleOk() {
+      //const data = {...this.form}
+      //console.log("Login>>", JSON.stringify(data))
+   /*
+   try {
+        const res = await this.$auth.loginWith('local',{
+          data: {
+            //pipat.pimnont@gmail.com
+            email: data.email,
+            password: data.password
+          }
+      })
+    
+      if(res.status == 200){
+   
+        this.$toast.open({ message: `คุณ ${data.email} เข้าสู่ระบบ`, type: "success", position: "bottom-right", className: "textWhite",})
+        localStorage.setItem('token',res.data.access_token)
+        localStorage.setItem('user',JSON.stringify(res.data.user))
+         setTimeout(() => {this.$router.push("/")}, 3000)
+      }
+      } catch (error){
+        console.error('Error is  : ', error)
+       //this.$toast.open({ message: `คุณ ${data.email} ไม่สามารถเข้าสู่ระบบ`, type: "error", position: "bottom-right", className: "textWhite",})
+         setTimeout(() => {this.$router.push("/")}, 3000)
+      }
+      */
+     this.$emit('EmitLogin',this.form)
     },
   },
 }

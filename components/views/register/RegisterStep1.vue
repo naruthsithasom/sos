@@ -178,8 +178,8 @@ export default {
       username: "",
       email: "",
       password: "",
-      // advice: "",
       advice: "",
+      adviceInput: "",
       confirmPwd: null,
       data: {},
       check: false,
@@ -240,10 +240,11 @@ export default {
       }
     },
     async checkRecommed() {
-      if (this.advice.length) {
+      //console.log('test advice',this.advice)
+      if (this.advice) {
         this.$emit('advie', this.advice)
       } 
-      if( this.advice.length === 0) {
+      if(!this.advice) {
         console.log(" recommed not found..")
         this.$toast.open({
            message: `กรุณาใส่ชื่อผู้แนะนำ`,
@@ -258,7 +259,7 @@ export default {
       if (/^[A-Za-z0-9_]+$/.test(char)) {
         return (this.isNotpattern = false)
       } else {
-        console.log(">>", char)
+        //console.log(">>", char)
         return (this.isNotpattern = true)
       }
     },

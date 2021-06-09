@@ -164,7 +164,9 @@ export default {
     }
   },
   async mounted() {
- 
+   console.log('auth storage::',this.$auth)
+   console.log('auth state::',this.$auth.$state)
+
   },
   watch: {
   
